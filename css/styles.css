@@ -409,7 +409,7 @@ body {
 }
 
 .banner__contacto{
-    background-image: url(/images/contact-bannerjpg.jpg);
+    background-image: url(../images/contact-bannerjpg.jpg);
     background-size: cover;
     padding: 10px;
     height: 400px;
