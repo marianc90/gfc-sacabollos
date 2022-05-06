@@ -916,7 +916,10 @@ transition: 1s;
         
 }
  
-  
+  .banner__contacto{
+    height: fit-content;
+
+}
 
 .banner__contacto__titulo{
     font-size: 90%;
