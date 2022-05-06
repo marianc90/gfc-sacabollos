@@ -103,8 +103,8 @@ body {
 
 .bannerinicio{
     background-image:url(../images/carrusel2.jpg);
-    background-size: cover;
-    background-position: center; /**Se cambió de right a center porque en mobile no cargaba*/
+    background-size:cover;
+    background-position: center;
     width: 100%;
     height: 800px;
     display: flex;
@@ -909,18 +909,17 @@ transition: 1s;
 }
 
 .bannerinicio{
-    height: 650px; /**Se cambió de 80vh porque en mobile no cargaba*/
+    height: 650px;
 }
 .bannerinicio__titulo{
     font-size: 200%;
         
 }
  
-.banner__contacto{
+  .banner__contacto{
     height: fit-content;
 
 }
-  
 
 .banner__contacto__titulo{
     font-size: 90%;
