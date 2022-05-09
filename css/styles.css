@@ -7,18 +7,67 @@
 
 
 
-a{text-decoration: none;
-    color: white;}
+a{
+    text-decoration: none;
+    color: white !important;}
+
 
 h2{
         font-weight: 100;
         margin: 15px;
-        
-       
+}
+h3{
+    font-size: 19px;
+}
+h4{
+font-size: 17px;
+}
+h5{
+font-size: 15px;
+}
+h6{
+    font-size: 14px;
+    font-weight: 100;
+
+}
+form{
+    font-size: 15px;
+}
+
+select{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 13px; 
+    line-height: 20px;
+}
+
+input{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 13px; 
+    line-height: 20px;
+}
+button{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 13px; 
+    line-height: 20px;
+}
+
+textarea {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 13px; 
+    line-height: 20px;
+}
+
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif !important;
     background-color: rgba(12, 7, 56);
     color: white;
 }
@@ -361,6 +410,7 @@ background: linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(12,7,56,1) 100%);
 .footer h4{
     
     margin-bottom: 30px;
+    font-size: 15px;
           
 }
 
@@ -402,8 +452,15 @@ background: linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(12,7,56,1) 100%);
     grid-area: redes;
     line-height: 30px;
     text-align: center;
+
      
 }
+.footer__redes--redestitulo{
+        margin-top: 1rem;
+    
+     
+}
+
 .footer__redes img{
         
     border-radius: 100px;
@@ -413,10 +470,13 @@ background: linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(12,7,56,1) 100%);
 
 .footer__derechos {
     grid-area: derechos;
-    
     text-align: center;
-    
 }
+.footer__derechos h6{
+    margin-top: 2rem;
+    font-size: 11px;
+}
+
 
 .banner__contacto{
     background-image: url(../images/contact-bannerjpg.jpg);
@@ -559,7 +619,7 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
     background-color: #a13030;
     border-radius: 16px;
     padding: 10px;
-    width: 25%;
+    width: 30%;
     text-align: center;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -925,6 +985,10 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
     margin-bottom: 10px;
 
 }
+.footer__redes input{
+    width: 150px;
+
+}
 
 .bannerinicio{
     height: 650px;
@@ -941,6 +1005,7 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 
 .banner__contacto__titulo{
     font-size: 90%;
+    margin-top: 20px;
 
 }
 
