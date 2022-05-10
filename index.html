@@ -43,7 +43,27 @@
     
     <main>
 
-        <section class="bannerinicio">
+        <section class="contenedor_bannerinicio">
+
+            <div id="carouselExampleIndicators" class="carousel slide bannerinicio__carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/carrusel1.jpg" class="bannerinicio_carousel--imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/carrusel2.jpg" class="bannerinicio_carousel--imagenes" alt="...">
+                  </div>
+                </div>
+                
+              </div>
+
+        
+
+        <div class="bannerinicio">
         
                <H1 class="bannerinicio__titulo">Tu auto, impecable</H1>
             
@@ -71,12 +91,9 @@
 
                      </div>
                 </div>
-
-
                </div>
-               
-               
-               
+            </div>
+
         </section>
 
         <section id="que_hacemos" class="que_hacemos">
@@ -138,11 +155,11 @@
                  </section>
 
         <h2>Últimos trabajos</h2>
+        
+<section class="contenedor_ultimos_trabajos">
 
-        <section id="ultimos_trabajos" class="ultimos_trabajos">
-            
-           
-            <div id="ultimos_trabajos">
+        <div id="ultimos_trabajos" class="ultimos_trabajos">
+        
                 <ul>
                 <li>
                 <img src="images/ultimostrabajos1.png" alt="ultimostrabajos1">
@@ -151,12 +168,27 @@
                 <img src="images/ultimostrabajos1.png" alt="ultimostrabajos1">
                 <img src="images/ultimostrabajos2.png" alt="ultimostrabajos2">
                 <img src="images/ultimostrabajos3.png" alt="ultimostrabajos3">
-                <div class="ultimos_trabajos_enlace"><a href="pages/trabajos_realizados.html"> Ver más </a></div></li>
+                <div class="ultimos_trabajos_enlace"></div>
+                
+                </li>
+               
                 </ul>
+        </div>
+        
 
+        <div class="card text-white bg-dark mb-3" >
+            
+            <div class="card-body">
+              <h4 class="card-title text-center">¿Querés ver más trabajos realizados?</h4>
+              <div class="d-grid gap-2 m-5">
+               <button class="btn btn-primary" type="button" ><a href="pages/trabajos_realizados.html"> ¡Click acá!</a></button>
+              </div>
             </div>
-
-        </section>
+        </div>
+            
+               
+</section>     
+        
 
         
     </main>

@@ -154,14 +154,34 @@ body {
         display: none;
     }
 
+.contenedor_bannerinicio{
+    width: 100%;
+    height: 700px;
+
+}
+
+.bannerinicio_carousel{
+     position: relative;
+     
+}
+
+.bannerinicio_carousel--imagenes{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    
+
+}
+
 
 
 .bannerinicio{
-    background-image:url(../images/carrusel2.jpg);
-    background-size:cover;
-    background-position: center;
-    width: 100%;
-    height: 800px;
+    position: absolute;
+    top: 50px;
+    width: 90%;
+    height: 700px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -169,6 +189,7 @@ body {
     flex-wrap: wrap;
     
 }
+
 .bannerinicio__titulo{
     align-self:flex-start;
     color: white;
@@ -241,15 +262,20 @@ body {
 
 }
 
+.contenedor_ultimos_trabajos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(48,48,48);
+    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+}
+
 .ultimos_trabajos{
-    
     height: 340px;
     border-radius: 15px;
-    background: rgb(48,48,48);
-background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+ 
     padding: 1rem;  
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: hidden;
     animation: slide infinite 15s alternate;
     
     
@@ -260,10 +286,10 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
       margin-left: 0px;
     }
     50% {
-      margin-left: -1200px;
+      margin-left: -800px;
     }
     100% {
-      margin-left: -2400px;
+      margin-left: -1800px;
     }
   }
 
@@ -293,9 +319,6 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 .ultimos_trabajos ul li img:hover{
         
     transform: scale(102%);
-    
-
-   
     
 }
 
@@ -990,12 +1013,32 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 
 }
 
+
+.contenedor_bannerinicio{
+    height: 550px;
+    }
+.bannerinicio_carousel--imagenes{
+    height: 550px;
+    }
+   
 .bannerinicio{
-    height: 650px;
-}
+        height: 550px;
+       
+    }
+
 .bannerinicio__titulo{
+    margin-top: 50px;
     font-size: 200%;
         
+}
+
+
+
+
+.contenedor_ultimos_trabajos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   
 }
  
   .banner__contacto{
@@ -1049,6 +1092,7 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
     font-size: 100%;
     width: 80%;
 }
+
 
 
 }
