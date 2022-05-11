@@ -627,7 +627,8 @@ transition: 1s;
 
 .razones{
     height: auto;
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 150px;
     background: rgb(48,48,48);
 background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
     
@@ -699,11 +700,8 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 }
 
 .servicios{
-    
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 150px;
     background: rgb(48,48,48);
 background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 
@@ -712,29 +710,17 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 .servicios__articulo{
     border-radius: 16px;
     padding: 10px;
-    width: 250px;
-    text-align: center;
+    width: 70%;
     margin: 10px;
     
 
 }
 .servicios__articulo h3{
     text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
-
-
-}
-.servicios__articulo p{
-    font-weight: 100;
-    font-size: smaller;
-    margin-top: 10px;
-    border-radius: 15px;
-    transition:all 1s;
-    opacity: 0;
 }
 
-.servicios__articulo:hover p{
-    opacity: 100;
-}
+
+
 .servicios__articulo:hover{
     transform: scale(120%);
 }
