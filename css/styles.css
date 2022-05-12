@@ -709,6 +709,7 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 
 .servicios__articulo{
     border-radius: 16px;
+    border-style: none;
     padding: 10px;
     width: 70%;
     margin: 10px;
@@ -792,13 +793,22 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 
 }
 
+.contenedor_trabajos{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 .trabajos{
     background-color:#772323;
     padding: 10px;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-evenly;
     border-radius: 20px;
     margin: 10px;
 }
@@ -811,12 +821,13 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 }
 
 .trabajos img:hover{
-    transform: scale(130%);
-}
-.trabajos img:target{
-    transform: scale(150%);
+    transform: scale(110%);
 }
 
+.trabajos_borde_galeria{
+   padding: 10px;
+   object-fit: cover;
+}
 
 .testimonios{
     
