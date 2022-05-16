@@ -72,6 +72,31 @@ body {
     color: white;
 }
 
+@keyframes animationHeader {
+    0% {
+        opacity: 0;
+      transform: translatey(-100%);
+    }
+    100% {
+        opacity: 100;
+      transform: translatey(0);
+    }
+  }
+
+  @keyframes animationMain {
+    0% {
+        opacity: 0;
+     
+    }
+    100% {
+        opacity: 100;
+     
+    }
+  }
+main{
+    animation: 1s ease-out 0s 1 animationMain;
+}
+
 .header {
     background-color: rgba(12, 7, 56);
     font-weight: 100;
@@ -86,9 +111,11 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgba(12,7,56,1);
+    animation: 0.5s ease-out 0s 1 animationHeader;
     
     
 }
+
 
 
 .header__logo img {
@@ -226,8 +253,13 @@ body {
     height: 300px;
     border-radius: 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   
+    transition: all 1s;
     
+}
+
+.bannerinicio__agenda--contenedor:hover{
+
+    transform: scale(105%);
 }
 
 .bannerinicio__agenda--contenido {
@@ -859,7 +891,7 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 
 .testimonios__articulo--vermas{
     background-color: rgb(110, 110, 110);
-    
+    transition: all 0.5s;
     border-radius: 16px;
     padding: 10px;
     width: 300px;
@@ -870,9 +902,15 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
     
 }
 
+.testimonios__articulo--vermas:hover{
+    background-color:#772323;
+    transform: scale(105%);
+
+}
+
 .testimonios__articulo--dejarcomentario{
     background-color: rgb(109, 105, 105);
-    
+    transition: all 0.5s;
     border-radius: 16px;
     padding: 10px;
     width: 300px;
@@ -882,6 +920,11 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
     height: fit-content;
     align-self: flex-end;
      
+}
+.testimonios__articulo--dejarcomentario:hover{
+    background-color:#772323;
+    transform: scale(105%);
+
 }
 
 .testimonios__articulo--userimage{
