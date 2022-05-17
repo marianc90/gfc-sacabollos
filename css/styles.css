@@ -432,15 +432,14 @@ background: linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(12,7,56,1) 100%);
 
 }
 .que_hacemos article ul{
-
+    list-style-image: url(../images/check.png);
     margin-left: 25px;
-   text-align: left;
-   font-weight: 100;
-   width: 80%;
+    text-align: left;
+    font-weight: 100;
+     width: 80%;
   
    
 }
-
 
 
 .footer {
@@ -668,12 +667,12 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 }
 
 .razones__articulo{
-    background-color: #a13030;
+    background-color: #772323;
     border-radius: 16px;
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: all 1s;
+    transition: all 0.5s;
 
 }
 
@@ -702,6 +701,7 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 
 }
 .razones__articulo:hover{
+    background-color: #a14242;
     transform: scale(105%);
 
 }
@@ -875,14 +875,18 @@ background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
 
 .testimonios__articulo{
     background-color: darkgrey;
-    
     border-radius: 16px;
     padding: 10px;
     width: 300px;
     text-align: center;
     margin: 10px;
-
+    transition: all 0.5s;
 }
+
+.testimonios__articulo:hover{
+background-color: #772323;
+}
+
 .testimonios__articulo p{
     font-weight: 100;
     font-size: smaller;
