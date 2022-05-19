@@ -37,14 +37,13 @@
 
         &:target{
             right: 0;
-        }
+        }        
+}
 
-        &__cerrar{
-            display: block;
-            align-self: flex-end;
-            transform:translateY(-2rem) scale(150%);
-        }
-        
+.menubar__cerrar{
+    display: block;
+    align-self: flex-end;
+    transform:translateY(-2rem) scale(150%);
 }
 
 .footer {

@@ -841,7 +841,7 @@ main {
   #menubar:target {
     right: 0;
   }
-  #menubar__cerrar {
+  .menubar__cerrar {
     display: block;
     align-self: flex-end;
     transform: translateY(-2rem) scale(150%);
