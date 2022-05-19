@@ -48,7 +48,7 @@
             &--contenedor{
     
    
-            background-color: rgb(170, 42, 42);
+            background-color: $rojo_oscuro;
             width: 270px;
             height: 300px;
             border-radius: 16px;
@@ -96,13 +96,6 @@
 }
 
 
-.contenedor_ultimos_trabajos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background: rgb(48,48,48);
-    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
-}
-
 .ultimos_trabajos{
     height: 340px;
     border-radius: 15px;
@@ -142,7 +135,13 @@
         vertical-align: middle;
         text-align: center;
         font-weight: 100;
-       
+    }
+
+    &_contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: rgb(48,48,48);
+        background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
     }
 }
 
@@ -166,7 +165,7 @@
     
     
         display: inline-table;
-        background-color: rgb(170, 42, 42);
+        background-color: $rojo_oscuro;
         width: 270px;
         height: 450px;
         border-radius: 16px;

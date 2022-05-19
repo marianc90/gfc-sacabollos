@@ -14,70 +14,54 @@
     background: rgba(12,7,56,1);
     animation: 0.5s ease-out 0s 1 animationHeader;
     
-    
-}
-
-
-
-.header__logo img {
-
+    &__logo img {
    
-    border-radius: 100px;
-    margin: 15px;
-    transform: translateY(14px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 100px;
+        margin: 15px;
+        transform: translateY(14px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
     
+    &__links{
+        font-size: 15px;
+        padding: 8px;   
+        list-style: none;
+        background-color: $rojo_oscuro;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
 
+        & li {
+       
+            list-style: none;
+            margin-right: 12px;
+            text-align: center;
+            transition: 0.5S;   
+
+            &:hover{
+                text-decoration: underline;   
+                text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.5em white;
+                    
+            }
+            
+        }
+    
+    }
+
+    &__menubar {
+        display: none;
+
+        &__cerrar{
+            display: none;
+        }
+    }
 }
+
 
 .nav{
     align-self:flex-end;
     display: flex;
-    
-    
 }
-
-.header__links{
-    font-size: 15px;
-    padding: 8px;
-   
-    
-    list-style: none;
-    background-color: rgb(114, 32, 32);
-    border-radius: 0px;
-   
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-
-}
-
-
-
-
-.header__links li {
-       
-    list-style: none;
-    margin-right: 12px;
-    text-align: center;
-    transition: 0.5S;   
-    
-     }
-
-.header__links li:hover{
-    text-decoration: underline;   
-    text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.5em white;
-        
-}
-    
-
-.header__menubar {
-        display: none;
-    }
-
-.menubar__cerrar{
-        display: none;
-    }

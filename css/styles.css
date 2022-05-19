@@ -133,7 +133,7 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #a13030;
+  background-color: #772323;
   background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
 }
 
@@ -161,16 +161,11 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.nav {
-  align-self: flex-end;
-  display: flex;
-}
-
 .header__links {
   font-size: 15px;
   padding: 8px;
   list-style: none;
-  background-color: #722020;
+  background-color: #772323;
   border-radius: 0px;
   display: flex;
   flex-direction: row;
@@ -195,8 +190,13 @@ main {
   display: none;
 }
 
-.menubar__cerrar {
+.header__menubar__cerrar {
   display: none;
+}
+
+.nav {
+  align-self: flex-end;
+  display: flex;
 }
 
 .footer {
@@ -305,7 +305,7 @@ main {
 }
 
 .bannerinicio__agenda--contenedor {
-  background-color: #aa2a2a;
+  background-color: #772323;
   width: 270px;
   height: 300px;
   border-radius: 16px;
@@ -346,13 +346,6 @@ main {
   font-weight: 100;
 }
 
-.contenedor_ultimos_trabajos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #0c0738 100%);
-}
-
 .ultimos_trabajos {
   height: 340px;
   border-radius: 15px;
@@ -391,6 +384,13 @@ main {
   font-weight: 100;
 }
 
+.ultimos_trabajos_contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #303030;
+  background: linear-gradient(0deg, #303030 0%, #0c0738 100%);
+}
+
 .que_hacemos {
   padding: 15px;
   background: #262626;
@@ -406,7 +406,7 @@ main {
 
 .que_hacemos article {
   display: inline-table;
-  background-color: #aa2a2a;
+  background-color: #772323;
   width: 270px;
   height: 450px;
   border-radius: 16px;
@@ -814,7 +814,7 @@ main {
     font-size: 40px;
     margin: 30px;
     padding: 10px;
-    background-color: #a13030;
+    background-color: #772323;
   }
   .header__logo img {
     width: 70%;

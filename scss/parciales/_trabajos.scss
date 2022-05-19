@@ -23,7 +23,7 @@
 
 
 .trabajos{
-    background-color:#772323;
+    background-color:$rojo_oscuro;
     padding: 10px;
     width: fit-content;
     display: flex;
@@ -83,7 +83,7 @@
         }
 
         &:hover{
-            background-color: #772323;
+            background-color: $rojo_oscuro;
         }
 
         &--vermas{
@@ -98,7 +98,7 @@
             align-self: flex-end;
 
             &:hover{
-                background-color:#772323;
+                background-color:$rojo_oscuro;
                 transform: scale(105%);
             
             }
@@ -118,7 +118,7 @@
             align-self: flex-end;
 
             &:hover{
-                background-color:#772323;
+                background-color:$rojo_oscuro;
                 transform: scale(105%);
             
             }
