@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(12, 7, 56);
+    background-color: $azul_oscuro;
     font-weight: 100;
     position: sticky; 
     top: 0;
@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: rgba(12,7,56,1);
+    background: $azul_oscuro;
     animation: 0.5s ease-out 0s 1 animationHeader;
     
     &__logo img {
