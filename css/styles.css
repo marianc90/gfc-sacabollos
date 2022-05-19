@@ -514,7 +514,7 @@ main {
   transition: 1s;
 }
 
-.mapa_y_datos__mapa iframe iframe:hover {
+.mapa_y_datos__mapa iframe:hover {
   transform: scale(105%);
 }
 
