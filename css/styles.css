@@ -159,6 +159,11 @@ main {
   margin: 15px;
   transform: translateY(14px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.5s;
+}
+
+.header__logo img:hover {
+  transform: scale(103%) translateY(14px);
 }
 
 .header__links {
@@ -190,7 +195,7 @@ main {
   display: none;
 }
 
-.header__menubar__cerrar {
+.menubar__cerrar {
   display: none;
 }
 
@@ -224,6 +229,13 @@ main {
 .footer__logo img {
   border-radius: 100px;
   height: 100px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  transition: all 0.5s;
+}
+
+.footer__logo img:hover {
+  transform: scale(103%);
 }
 
 .footer__nav {
@@ -232,6 +244,10 @@ main {
 
 .footer__nav ul {
   list-style: none;
+}
+
+.footer__nav ul li:hover {
+  font-weight: 400;
 }
 
 .footer__contacto {
@@ -246,6 +262,8 @@ main {
 
 .footer__redes img {
   border-radius: 100px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 .footer__redes--redestitulo {
@@ -442,8 +460,8 @@ main {
   height: 100px;
   margin: 10px;
   transition: 1s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 150px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 .banner__contacto {

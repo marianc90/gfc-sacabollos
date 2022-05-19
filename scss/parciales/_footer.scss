@@ -24,13 +24,24 @@
         & img{
             border-radius: 100px;
             height: 100px;
+            -webkit-filter: drop-shadow(5px 5px 5px #222);
+            filter: drop-shadow(5px 5px 5px #222);
+            transition: all 0.5s;
+
+            &:hover{
+                transform: scale(103%);
+            }
          }
     }
     &__nav{
         grid-area: site;
         & ul{
             list-style: none;       
-         }
+        }
+        & ul li:hover{
+            font-weight: 400;
+        }
+        
     }
 
     &__contacto{
@@ -44,6 +55,8 @@
 
         & img{
             border-radius: 100px;
+            -webkit-filter: drop-shadow(5px 5px 5px #222);
+            filter: drop-shadow(5px 5px 5px #222);
             }
         
         &--redestitulo{
