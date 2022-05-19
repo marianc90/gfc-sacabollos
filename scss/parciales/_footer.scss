@@ -1,0 +1,66 @@
+.footer {
+    background-color: rgb(48, 48, 48);
+    display: grid;
+    padding: 20px;
+    font-weight: 100;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "logo site contacto redes"
+    "logo site contacto redes"
+    "derechos derechos derechos derechos" 
+    ;
+    justify-items: stretch;
+    gap: 10px;
+    font-size: 15px;
+    
+    & h4{
+        margin-bottom: 30px;
+        font-size: 15px; 
+    }
+    &__logo{
+        grid-area: logo;   
+    
+        & img{
+            border-radius: 100px;
+            height: 100px;
+         }
+    }
+    &__nav{
+        grid-area: site;
+        & ul{
+            list-style: none;       
+         }
+    }
+
+    &__contacto{
+        grid-area: contacto;
+    }
+
+    &__redes{  
+        grid-area: redes;
+        line-height: 30px;
+        text-align: center;
+
+        & img{
+            border-radius: 100px;
+            }
+        
+        &--redestitulo{
+            margin-top: 1rem; 
+        }
+    
+    }
+
+    &__derechos {
+        grid-area: derechos;
+        text-align: center;
+
+        & h6{
+            margin-top: 2rem;
+            font-size: 11px;
+        }
+        
+    }
+
+}

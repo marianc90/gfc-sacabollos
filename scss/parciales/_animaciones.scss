@@ -1,0 +1,47 @@
+@keyframes animationHeader {
+    0% {
+        opacity: 0;
+      transform: translatey(-100%);
+    }
+    100% {
+        opacity: 100;
+      transform: translatey(0);
+    }
+  }
+
+  @keyframes animationMain {
+    0% {
+        opacity: 0;
+     
+    }
+    100% {
+        opacity: 100;
+     
+    }
+  }
+
+  @keyframes glow{
+    0%{
+        text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.1em white;
+        
+    }
+    50%{
+        text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.5em white;
+
+    }
+    100%{
+        text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.1em white;
+    }
+}
+
+@keyframes slide {
+    0% {
+      margin-left: 0px;
+    }
+    50% {
+      margin-left: -800px;
+    }
+    100% {
+      margin-left: -1800px;
+    }
+  }

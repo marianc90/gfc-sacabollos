@@ -1,0 +1,136 @@
+.banner__trabajos{
+    background-image:url(../images/trabajos/banner.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    min-height: 100px;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+
+    &--titulo{
+        font-size: 110%;
+        align-self: flex-start;
+        width: 40%;
+        margin-left: 10%;
+        line-height: 1.9;
+    
+    }
+}
+
+
+
+.trabajos{
+    background-color:#772323;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    border-radius: 20px;
+    margin: 10px;
+
+    &_contenedor{
+        display: flex;
+        justify-content: center;
+    }
+
+    & img{
+        height: 180px;
+        width: 270px;
+        margin: 2px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.5s;
+
+        &:hover{
+            transform: scale(110%);
+        }
+    }
+
+    &_borde_galeria{
+        padding: 10px;
+        object-fit: cover;
+     }
+
+}
+
+
+
+.testimonios{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: rgb(48,48,48);
+    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+
+    &__articulo{
+        background-color: darkgrey;
+        border-radius: 16px;
+        padding: 10px;
+        width: 300px;
+        text-align: center;
+        margin: 10px;
+        transition: all 0.5s;
+
+        & p{
+            font-weight: 100;
+            font-size: smaller;
+            margin-top: 10px;
+        }
+
+        &:hover{
+            background-color: #772323;
+        }
+
+        &--vermas{
+            background-color: rgb(110, 110, 110);
+            transition: all 0.5s;
+            border-radius: 16px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            height: fit-content;
+            align-self: flex-end;
+
+            &:hover{
+                background-color:#772323;
+                transform: scale(105%);
+            
+            }
+            
+        }
+
+        &--dejarcomentario{
+            background-color: rgb(109, 105, 105);
+            transition: all 0.5s;
+            border-radius: 16px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            height: fit-content;
+            height: fit-content;
+            align-self: flex-end;
+
+            &:hover{
+                background-color:#772323;
+                transform: scale(105%);
+            
+            }
+         }
+            
+        &--userimage{
+                width: 50px;
+            }
+
+        &--starimage{
+            width: 10px;
+        }
+
+    }
+}

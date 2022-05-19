@@ -1,0 +1,148 @@
+@media screen and (max-width: 600px) {
+    .header{
+        height: 120px;
+
+        &__menubar{
+            display: block;
+            font-size: 40px;
+            margin: 30px;
+            padding: 10px;
+            background-color: #a13030;
+        }
+
+        &__logo img{
+            width: 70%;
+            transform: translateY(10px);
+        }
+
+        &__links {
+            display: none;
+        }
+    }
+
+    #menubar{
+        display: flex;
+        background-color:rgba(161, 48, 48, 0.97);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: right 1s;
+        flex-direction: column;
+        height: 100%; 
+        justify-content: center;
+        gap: 1rem;
+
+        &:target{
+            right: 0;
+        }
+
+        &__cerrar{
+            display: block;
+            align-self: flex-end;
+            transform:translateY(-2rem) scale(150%);
+        }
+        
+}
+
+.footer {
+    background-color: rgb(48, 48, 48);
+    display: grid;
+     padding: 20px;
+    font-weight: 100;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "logo redes"
+    "site contacto"
+    "derechos derechos" 
+    ;
+    justify-items: center;
+    gap: 30px;
+    font-size: smaller;
+    
+    &__logo{
+        align-self: center;
+    }
+    &__redes{
+        align-self: center;
+        text-align: center;
+
+        & h4{
+            margin-bottom: 10px;
+        }
+        & input{
+            width: 150px;
+        }
+    }
+ 
+}
+
+.bannerinicio{
+    height: 550px;
+
+    &_contenedor{
+        height: 550px;
+    }
+
+    &_carousel--imagenes{
+        height: 550px;
+    }
+
+    &__titulo{
+        margin-top: 50px;
+        font-size: 200%;
+    }
+   
+}
+
+.ultimos_trabajos_contenedor{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+ 
+.banner__contacto{
+    height: fit-content;
+
+    &__titulo{
+        font-size: 90%;
+        margin-top: 20px;
+    }
+
+    &__formulario{
+        height: 80%;
+        margin: 10px;
+        font-size: large;
+        flex-direction: column;
+        text-align: center;
+        transform: scale(70%);
+    }
+
+}
+
+.mapa_y_datos{
+    font-size: small;
+}
+
+
+.banner__quienes_somos{
+     height: 60vh; 
+
+     &--titulo{
+        font-size: 100%;
+        width: 80%; 
+    }
+}
+
+.banner__servicios{
+    height: 60vh;
+
+    &--titulo{
+        font-size: 100%;
+        width: 80%;
+    }
+}
+
+}

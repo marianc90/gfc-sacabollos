@@ -1,0 +1,88 @@
+
+.banner__contacto{
+    background-image: url(../images/contact-bannerjpg.jpg);
+    background-size: cover;
+    padding: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+
+    &__titulo{
+        font-size: 110%;
+        align-self: flex-start;
+    }
+
+    &__formulario{
+        font-weight: 100;
+        width: 480px;
+        min-width: 480px;
+        height: 250px;
+        margin: 20px;
+        font-size: smaller;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+}
+
+
+.mapa_y_datos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: rgb(48,48,48);
+    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+
+    &__mapa iframe{
+        border-radius: 20px;
+        width: 100%; 
+        height:300px; 
+        border: 0;
+        transition: 1s;
+
+        & iframe:hover{
+            transform: scale(105%);
+        }
+    }
+
+    &__datos{
+        font-variant: normal;
+        transition: 1s;
+
+        &:hover{
+            transform: scale(105%);
+        }
+
+        &--whatsapp{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+
+            & img{
+                margin: 20px;
+                width: 60px;
+             }
+        }
+
+        &--datos{
+            padding: 15px;
+            line-height: 2;
+
+            & h4{
+                font-weight: 100;
+            }
+        }
+    
+    }
+
+}

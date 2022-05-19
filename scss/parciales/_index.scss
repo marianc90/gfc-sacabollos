@@ -1,0 +1,212 @@
+
+.bannerinicio{
+    position: absolute;
+    top: 50px;
+    width: 90%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+
+        &_contenedor{
+            width: 100%;
+            height: 700px;
+        
+        }
+    
+        &_carousel{
+            position: relative;
+       
+            &--imagenes{
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+                object-position: center;
+                overflow: hidden;
+                
+            }
+       
+        }
+
+        &__titulo{
+            align-self:flex-start;
+            color: white;
+            font-weight: 400;
+            font-size: 270%;
+            margin-right: 30px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            animation-name: glow;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;    
+        }
+
+        &__agenda{
+        
+            &--contenedor{
+    
+   
+            background-color: rgb(170, 42, 42);
+            width: 270px;
+            height: 300px;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: all 1s;
+
+            &:hover{
+
+                transform: scale(105%);
+            }
+        }
+
+        &--contenido {
+            display: inline-block;
+            position: relative;
+            background-color: rgb(16, 13, 46);
+            width: 240px;
+            height: 270px;
+            border-radius: 16px;
+            margin: 14px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+            &  h3 {
+                color: white;
+                text-align: center;
+                font-weight: 400;
+                margin: 7px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            & form {
+                display: inline-block;
+                margin-top: 20px;
+                margin-left: 20px;
+                color: white;
+                line-height: 30px;
+                font-weight: 100;
+            
+            }
+        }
+
+    }
+
+}
+
+
+.contenedor_ultimos_trabajos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(48,48,48);
+    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+}
+
+.ultimos_trabajos{
+    height: 340px;
+    border-radius: 15px;
+    padding: 1rem;  
+    overflow-y: hidden;
+    overflow-x: hidden;
+    animation: slide infinite 15s alternate;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+    
+    & ul li{
+        list-style: none;
+        white-space: nowrap;
+            
+        & img{
+        
+            width: 400px;
+            height: 300px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.5s;
+
+            &:hover{
+        
+                transform: scale(102%);
+                
+            }
+        
+        }   
+    }
+
+    &_enlace{
+        display: inline-block;
+        width: 150px;
+        height: 300px;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: 100;
+       
+    }
+}
+
+
+
+.que_hacemos{
+    padding: 15px;
+    background: rgb(38,38,38);
+    background: linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(12,7,56,1) 100%);
+    
+    &_box{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+
+    & article{
+    
+    
+        display: inline-table;
+        background-color: rgb(170, 42, 42);
+        width: 270px;
+        height: 450px;
+        border-radius: 16px;
+        text-align: center;
+        padding: 15px;
+        margin: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.5s;
+
+        & h4{
+            margin: 15px;
+        }
+
+        & ul{
+            list-style-image: url(../images/check.png);
+            margin-left: 25px;
+            text-align: left;
+            font-weight: 100;
+             width: 80%;
+        }
+       
+        &:hover{
+            transform: scale(105%);
+
+            & .que_hacemos__img{
+                transform: scale(130%);
+            }
+        }
+
+    }
+    
+    &__img {
+  
+        width: 100px;
+       height: 100px;
+       margin: 10px;
+       transition: 1s;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       border-radius: 150px;
+    
+    }
+
+}
