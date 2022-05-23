@@ -1,36 +1,26 @@
-.banner__trabajos{
-    background-image:url(../images/trabajos/banner.png);
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
-    min-height: 100px;
-    display: flex;
-    justify-content: left;
-    align-content: center;
-    flex-wrap: wrap;
-    text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+@import "extend";
 
-    &--titulo{
-        font-size: 110%;
-        align-self: flex-start;
-        width: 40%;
-        margin-left: 10%;
-        line-height: 1.9;
-    
+.banner__trabajos{
+    @extend .banner__general;
+       
+    &__titulo{
+        @extend .banner__general__titulo;      
+    }
+
+    &--video{
+        @extend .banner__general--video;
     }
 }
 
 
 
 .trabajos{
-    background-color:$rojo_oscuro;
     padding: 10px;
     width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    border-radius: 20px;
     margin: 10px;
 
     &_contenedor{
@@ -39,6 +29,7 @@
     }
 
     & img{
+        background-color: $rojo_oscuro;
         height: 180px;
         width: 270px;
         margin: 2px;
@@ -57,15 +48,26 @@
 
 }
 
+$tarjetagris: (
+    fondocolor: darkgray,
+    transicion: all 0.5s,
+    borderedondo: 16px,
+    paddingcomun: 10px,
+    ancho: 300px,
+    textoalineacion: center,
+    margen: 10px,
+    alto: fit-content,
+    alinearself: flex-end
 
+);
 
 .testimonios{
     padding: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background: rgb(48,48,48);
-    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+    background: $gris_oscuro;
+    background: linear-gradient(0deg, $gris_oscuro 0%, $azul_oscuro 100%);
 
     &__articulo{
         background-color: darkgrey;
@@ -87,15 +89,15 @@
         }
 
         &--vermas{
-            background-color: rgb(110, 110, 110);
-            transition: all 0.5s;
-            border-radius: 16px;
-            padding: 10px;
-            width: 300px;
-            text-align: center;
-            margin: 10px;
-            height: fit-content;
-            align-self: flex-end;
+            background-color: map-get($tarjetagris, fondocolor);
+            transition: map-get($tarjetagris, transicion);
+            border-radius: map-get($tarjetagris, borderedondo);
+            padding: map-get($tarjetagris, paddingcomun);
+            width: map-get($tarjetagris, ancho);
+            text-align: map-get($tarjetagris, textoalineacion);
+            margin: map-get($tarjetagris, margen);
+            height: map-get($tarjetagris, alto);
+            align-self: map-get($tarjetagris, alinearself);
 
             &:hover{
                 background-color:$rojo_oscuro;
@@ -106,16 +108,15 @@
         }
 
         &--dejarcomentario{
-            background-color: rgb(109, 105, 105);
-            transition: all 0.5s;
-            border-radius: 16px;
-            padding: 10px;
-            width: 300px;
-            text-align: center;
-            margin: 10px;
-            height: fit-content;
-            height: fit-content;
-            align-self: flex-end;
+            background-color: map-get($tarjetagris, fondocolor);
+            transition: map-get($tarjetagris, transicion);
+            border-radius: map-get($tarjetagris, borderedondo);
+            padding: map-get($tarjetagris, paddingcomun);
+            width: map-get($tarjetagris, ancho);
+            text-align: map-get($tarjetagris, textoalineacion);
+            margin: map-get($tarjetagris, margen);
+            height: map-get($tarjetagris, alto);
+            align-self: map-get($tarjetagris, alinearself);
 
             &:hover{
                 background-color:$rojo_oscuro;

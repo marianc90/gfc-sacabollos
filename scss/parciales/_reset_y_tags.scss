@@ -75,3 +75,20 @@ body {
 main{
     animation: 1s ease-out 0s 1 animationMain;
 }
+
+.whatsapp_link {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+    -webkit-animation: heartbeat 3s ease-in-out infinite both;
+    animation: heartbeat 3s ease-in-out infinite both;
+
+    
+    &:hover{
+    -webkit-animation: rotate-scale-up 0.65s linear both;
+    animation: rotate-scale-up 0.65s linear both;
+    
+    }
+}
+

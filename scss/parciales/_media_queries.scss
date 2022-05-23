@@ -17,12 +17,18 @@
 
         &__links {
             display: none;
+            
+            & li{
+                &:hover{
+                    background-color: $azul_oscuro;
+                }
+            }
         }
     }
 
     #menubar{
         display: flex;
-        background-color:rgba(161, 48, 48, 0.97);
+        background-color:$rojo_oscuro;
         width: 80%;
         height: 100vh;
         position: fixed;
@@ -79,20 +85,34 @@
  
 }
 
+@mixin bannerinicioalto ($alto) {
+    height: $alto;
+}
+
 .bannerinicio{
-    height: 550px;
+    @include bannerinicioalto(550px);
 
     &_contenedor{
-        height: 550px;
+        @include bannerinicioalto(550px);
     }
 
     &_carousel--imagenes{
-        height: 550px;
+        @include bannerinicioalto(550px);
     }
 
     &__titulo{
-        margin-top: 50px;
-        font-size: 200%;
+        margin-top: 100px;
+        margin-left: 50px;
+
+    &--tuauto{ 
+        display: inline; 
+        font-size: 30px;              
+        }    
+    &--impecable{
+        display: inline;
+        font-family: 'Great Vibes', cursive;
+        font-size: 50px;
+        }
     }
    
 }
@@ -106,8 +126,11 @@
     height: fit-content;
 
     &__titulo{
-        font-size: 90%;
+        font-size: 80%;
         margin-top: 20px;
+        width: 80%;
+        transform: translateY(30px);
+       
     }
 
     &__formulario{
@@ -131,7 +154,8 @@
 
      &--titulo{
         font-size: 100%;
-        width: 80%; 
+        width: 80%;
+        
     }
 }
 

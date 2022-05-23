@@ -1,0 +1,31 @@
+.banner__general {
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+    position: relative;
+
+}
+
+.banner__general__titulo{
+    z-index: 1;  
+    margin-bottom: 70px;
+    text-align: center;
+
+    & h1{
+    font-size: 300%;
+    width: 100%;
+    }
+
+}
+
+.banner__general--video{
+    z-index: 0;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

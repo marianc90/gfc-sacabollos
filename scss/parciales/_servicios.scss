@@ -1,28 +1,40 @@
-.banner__servicios{
-    background-image:url(../images/servicios/banner.jpg);
-    background-size: cover;
-    padding: 10px;
-    min-height: 400px;
-    display: flex;
-    justify-content: left;
-    align-content: center;
-    flex-wrap: wrap;
-    text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+@import "extend";
 
-    &--titulo{
-        font-size: 110%;
-        align-self: flex-start;
-        width: 40%;
-        margin-left: 10%;
-        line-height: 1.9;
+.banner__servicios{
+    @extend .banner__general;
+       
+    &__titulo{
+        @extend .banner__general__titulo;      
     }
+
+    &--video{
+        @extend .banner__general--video;
+    }
+}
+
+@mixin fondo_animacion ($fondotamano, $transicion){
+    background-size: $fondotamano;
+    transition: $transicion;
+}
+
+.descripcion__servicios{
+    margin: 30px;
+    padding: 30px;
+    font-weight: 100;
+    text-align: center;
+   
+    
+}
+
+.descripcion__servicios__contenido{
+
 }
 
 .servicios{
     padding-top: 50px;
     padding-bottom: 150px;
     background: rgb(48,48,48);
-    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+    background: linear-gradient(0deg, $gris_oscuro 0%, $azul_oscuro 100%);
 
     &__articulo{
         border-radius: 16px;
@@ -42,8 +54,8 @@
         &--granizo{
     
             background-image: url(../images/servicios/granizo.jpg);
-            background-size: cover;
-            transition: all 1s;
+            @include fondo_animacion(cover, all 1s);
+           
         
             &:hover{
                 background-image: url(../images/servicios/granizo2.jpg);
@@ -52,8 +64,7 @@
 
         &--paragolpes{
             background-image: url(../images/servicios/paragolpes.jpg);
-            background-size: cover;
-            transition: all 1s;
+            @include fondo_animacion(cover, all 1s);
 
             &:hover{
                 background-image: url(../images/servicios/paragolpes2.jpg);
@@ -64,8 +75,7 @@
 
         &--accidentes{
             background-image: url(../images/servicios/accidentes.jpg);
-            background-size: cover;
-            transition: all 1s;
+            @include fondo_animacion(cover, all 1s);
 
             &:hover{
                 background-image: url(../images/servicios/accidentes2.jpg);
@@ -76,8 +86,7 @@
 
         &--pulido{
             background-image: url(../images/servicios/pulido.jpg);
-            background-size: cover;
-            transition: all 1s;
+            @include fondo_animacion(cover, all 1s);
 
             &:hover{
                 background-image: url(../images/servicios/pulido2.jpg);

@@ -1,20 +1,21 @@
+@import "extend";
 
 .banner__contacto{
     background-image: url(../images/contact-bannerjpg.jpg);
     background-size: cover;
-    padding: 10px;
-    height: 400px;
-    display: flex;
     justify-content: space-around;
+    min-height: 70vh;
+    display: flex;
     align-content: center;
     flex-wrap: wrap;
     text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
 
     &__titulo{
-        font-size: 110%;
-        align-self: flex-start;
-    }
-
+        @extend .banner__general__titulo;
+        }
+        padding-top: 30px;
+        
+   
     &__formulario{
         font-weight: 100;
         width: 480px;
@@ -40,8 +41,8 @@
     padding: 30px;
     flex-wrap: wrap;
     gap: 20px;
-    background: rgb(48,48,48);
-    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+    background: $gris_oscuro;
+    background: linear-gradient(0deg, $gris_oscuro 0%, $azul_oscuro 100%);
 
     &__mapa iframe{
         border-radius: 20px;
@@ -57,16 +58,16 @@
 
     &__datos{
         font-variant: normal;
-        transition: 1s;
-
-        &:hover{
-            transform: scale(105%);
-        }
 
         &--whatsapp{
             display:flex;
             flex-direction: row;
             align-items: center;
+            transition: 1s;
+
+            &:hover{
+                transform: scale(105%);
+            }
 
             & img{
                 margin: 20px;
@@ -78,7 +79,7 @@
             padding: 15px;
             line-height: 2;
 
-            & h4{
+            & strong{
                 font-weight: 100;
             }
         }

@@ -40,7 +40,22 @@
             margin-bottom: 50px;
             animation-name: glow;
             animation-duration: 5s;
-            animation-iteration-count: infinite;    
+            animation-iteration-count: infinite;
+
+            &--tuauto{ 
+                display: inline;
+                font-size: 48px;      
+
+            }    
+            &--impecable{
+                display: inline;
+                font-family: 'Great Vibes', cursive;
+                font-size: 80px;
+                -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	            animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+            }
+            
         }
 
         &__agenda{
@@ -48,9 +63,9 @@
             &--contenedor{
     
    
-            background-color: $rojo_oscuro;
+            background: $rojo_oscuro;
             width: 270px;
-            height: 300px;
+            height: 286px;
             border-radius: 16px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             transition: all 1s;
@@ -65,24 +80,24 @@
             display: inline-block;
             position: relative;
             background-color: $azul_oscuro;
-            width: 240px;
+            width: 254px;
             height: 270px;
             border-radius: 16px;
-            margin: 14px;
+            margin: 8px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
             &  h3 {
                 color: white;
                 text-align: center;
                 font-weight: 400;
-                margin: 7px;
+                margin: 20px;
                 text-transform: uppercase;
-                font-weight: 400;
+                font-weight: 100;
             }
 
             & form {
                 display: inline-block;
-                margin-top: 20px;
+                margin-top: 5px;
                 margin-left: 20px;
                 color: white;
                 line-height: 30px;
@@ -140,8 +155,8 @@
     &_contenedor{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        background: rgb(48,48,48);
-        background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+        background: $gris_oscuro;
+        background: linear-gradient(0deg, $gris_oscuro 0%, $azul_oscuro 100%);
     }
 }
 
@@ -149,8 +164,8 @@
 
 .que_hacemos{
     padding: 15px;
-    background: rgb(38,38,38);
-    background: linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(12,7,56,1) 100%);
+    background: $gris_oscuro;
+    background: linear-gradient(180deg, $gris_oscuro 0%, $azul_oscuro 100%);
     
     &_box{
     
@@ -163,9 +178,9 @@
 
     & article{
     
-    
+        opacity: 0.7;
         display: inline-table;
-        background-color: $rojo_oscuro;
+        background: $rojo_oscuro;
         width: 270px;
         height: 450px;
         border-radius: 16px;
@@ -181,14 +196,23 @@
 
         & ul{
             list-style-image: url(../images/check.png);
-            margin-left: 25px;
+            margin-left: 35px;
             text-align: left;
             font-weight: 100;
-             width: 80%;
-        }
+            width: 80%;
+            line-height: 30px;
+            
+             & span{
+                top: -6px;
+                position: relative; 
+             }
+
+            }
+
        
         &:hover{
             transform: scale(105%);
+            opacity: 1;
 
             & .que_hacemos__img{
                 transform: scale(130%);
@@ -206,5 +230,12 @@
        -webkit-filter: drop-shadow(5px 5px 5px #222);
        filter: drop-shadow(5px 5px 5px #222);
     }
+
+}
+
+.boton-mastrabajos{
+    color: #fff;
+    background-color: $rojo_oscuro;
+    border-color: $rojo_oscuro;
 
 }

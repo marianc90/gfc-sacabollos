@@ -29,15 +29,13 @@
     
     &__links{
         font-size: 15px;
-        padding: 8px;   
         list-style: none;
-        background-color: $rojo_oscuro;
         border-radius: 0px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        border-radius: 5px;
+        
 
         & li {
        
@@ -45,10 +43,13 @@
             margin-right: 12px;
             text-align: center;
             transition: 0.5S;   
+            padding: 8px; 
+            border-radius: 5px;  
 
             &:hover{
-                text-decoration: underline;   
                 text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.5em white;
+                background-color: $rojo_oscuro;
+               
                     
             }
             

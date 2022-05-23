@@ -1,23 +1,29 @@
-.banner__quienes_somos{
-    background-image:url(../images/quienes_somos/banner.jfif);
-    background-size: cover;
-    background-position: center;
-    background-position-y:top;
-    padding: 10px;
-    min-height: 400px;
-    display: flex;
-    justify-content: left;
-    align-content: center;
-    flex-wrap: wrap;
-    text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+@import "extend";
 
-    &--titulo{
-        font-size: 110%;
-        align-self: flex-start;
-        width: 40%;
-        margin-left: 10%;
-        line-height: 1.9;
+.banner__quienes_somos{
+    @extend .banner__general;   
+    
+   
+    &__titulo{
+        @extend .banner__general__titulo;      
     }
+
+    &--video{
+        @extend .banner__general--video;
+    }
+}
+
+.descripcion__quienes_somos{
+    margin: 30px;
+    padding: 30px;
+    font-weight: 100;
+    text-align: center;
+   
+    
+}
+
+.descripcion__quienes_somos__contenido{
+
 }
 
 .razones{
@@ -25,9 +31,10 @@
     padding-top: 50px;
     padding-bottom: 150px;
     background: rgb(48,48,48);
-    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(12,7,56,1) 100%);
+    background: linear-gradient(0deg, $gris_oscuro 0%, $azul_oscuro 100%);
     
     &__articulo{
+        opacity: 0.7;
         background-color: $rojo_oscuro;
         border-radius: 16px;
         padding: 10px;
@@ -52,8 +59,8 @@
         }
 
         &:hover{
-            background-color: #a14242;
             transform: scale(105%);
+            opacity: 1;
 
             & .razones__articulo--imagen{
                 -webkit-filter: drop-shadow(5px 5px 5px #222);

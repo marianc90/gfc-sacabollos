@@ -1,3 +1,38 @@
+/* $rojo_oscuro:#772323;
+$azul_oscuro:rgba(12,7,56,1);
+$gris_oscuro:rgba(48,48,48,1);
+
+$dorado:linear-gradient(90deg, rgba(214,182,97,1) 0%, rgba(119,100,78,1) 0%, rgba(220,168,66,1) 72%, rgba(249,255,204,1) 100%); */
+.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+  position: relative;
+}
+
+.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+  z-index: 1;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+  font-size: 300%;
+  width: 100%;
+}
+
+.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+  z-index: 0;
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,12 +105,26 @@ ul {
 
 body {
   font-family: 'Noto Sans', sans-serif !important;
-  background-color: #0c0738;
+  background-color: #161518;
   color: white;
 }
 
 main {
   animation: 1s ease-out 0s 1 animationMain;
+}
+
+.whatsapp_link {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+  -webkit-animation: heartbeat 3s ease-in-out infinite both;
+  animation: heartbeat 3s ease-in-out infinite both;
+}
+
+.whatsapp_link:hover {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
 }
 
 @keyframes animationHeader {
@@ -122,6 +171,132 @@ main {
   }
 }
 
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   background-color: #F5F5F5;
@@ -133,12 +308,12 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #772323;
+  background-color: #856c36;
   background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
 }
 
 .header {
-  background-color: #0c0738;
+  background-color: #161518;
   font-weight: 100;
   position: sticky;
   top: 0;
@@ -150,7 +325,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #0c0738;
+  background: #161518;
   animation: 0.5s ease-out 0s 1 animationHeader;
 }
 
@@ -168,15 +343,12 @@ main {
 
 .header__links {
   font-size: 15px;
-  padding: 8px;
   list-style: none;
-  background-color: #772323;
   border-radius: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
 }
 
 .header__links li {
@@ -184,11 +356,13 @@ main {
   margin-right: 12px;
   text-align: center;
   transition: 0.5S;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .header__links li:hover {
-  text-decoration: underline;
   text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.5em white;
+  background-color: #856c36;
 }
 
 .header__menubar {
@@ -322,10 +496,23 @@ main {
   animation-iteration-count: infinite;
 }
 
+.bannerinicio__titulo--tuauto {
+  display: inline;
+  font-size: 48px;
+}
+
+.bannerinicio__titulo--impecable {
+  display: inline;
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
 .bannerinicio__agenda--contenedor {
-  background-color: #772323;
+  background: #856c36;
   width: 270px;
-  height: 300px;
+  height: 286px;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 1s;
@@ -338,11 +525,11 @@ main {
 .bannerinicio__agenda--contenido {
   display: inline-block;
   position: relative;
-  background-color: #0c0738;
-  width: 240px;
+  background-color: #161518;
+  width: 254px;
   height: 270px;
   border-radius: 16px;
-  margin: 14px;
+  margin: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -350,14 +537,14 @@ main {
   color: white;
   text-align: center;
   font-weight: 400;
-  margin: 7px;
+  margin: 20px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .bannerinicio__agenda--contenido form {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-left: 20px;
   color: white;
   line-height: 30px;
@@ -406,13 +593,13 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #0c0738 100%);
+  background: linear-gradient(0deg, #303030 0%, #161518 100%);
 }
 
 .que_hacemos {
   padding: 15px;
-  background: #262626;
-  background: linear-gradient(180deg, #262626 0%, #0c0738 100%);
+  background: #303030;
+  background: linear-gradient(180deg, #303030 0%, #161518 100%);
 }
 
 .que_hacemos_box {
@@ -423,8 +610,9 @@ main {
 }
 
 .que_hacemos article {
+  opacity: 0.7;
   display: inline-table;
-  background-color: #772323;
+  background: #856c36;
   width: 270px;
   height: 450px;
   border-radius: 16px;
@@ -441,14 +629,21 @@ main {
 
 .que_hacemos article ul {
   list-style-image: url(../images/check.png);
-  margin-left: 25px;
+  margin-left: 35px;
   text-align: left;
   font-weight: 100;
   width: 80%;
+  line-height: 30px;
+}
+
+.que_hacemos article ul span {
+  top: -6px;
+  position: relative;
 }
 
 .que_hacemos article:hover {
   transform: scale(105%);
+  opacity: 1;
 }
 
 .que_hacemos article:hover .que_hacemos__img {
@@ -464,21 +659,52 @@ main {
   filter: drop-shadow(5px 5px 5px #222);
 }
 
+.boton-mastrabajos {
+  color: #fff;
+  background-color: #856c36;
+  border-color: #856c36;
+}
+
+.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+  position: relative;
+}
+
+.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+  z-index: 1;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+  font-size: 300%;
+  width: 100%;
+}
+
+.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+  z-index: 0;
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .banner__contacto {
   background-image: url(../images/contact-bannerjpg.jpg);
   background-size: cover;
-  padding: 10px;
-  height: 400px;
-  display: flex;
   justify-content: space-around;
+  min-height: 70vh;
+  display: flex;
   align-content: center;
   flex-wrap: wrap;
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
-}
-
-.banner__contacto__titulo {
-  font-size: 110%;
-  align-self: flex-start;
+  padding-top: 30px;
 }
 
 .banner__contacto__formulario {
@@ -503,7 +729,7 @@ main {
   flex-wrap: wrap;
   gap: 20px;
   background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #0c0738 100%);
+  background: linear-gradient(0deg, #303030 0%, #161518 100%);
 }
 
 .mapa_y_datos__mapa iframe {
@@ -520,17 +746,17 @@ main {
 
 .mapa_y_datos__datos {
   font-variant: normal;
-  transition: 1s;
-}
-
-.mapa_y_datos__datos:hover {
-  transform: scale(105%);
 }
 
 .mapa_y_datos__datos--whatsapp {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transition: 1s;
+}
+
+.mapa_y_datos__datos--whatsapp:hover {
+  transform: scale(105%);
 }
 
 .mapa_y_datos__datos--whatsapp img {
@@ -543,30 +769,45 @@ main {
   line-height: 2;
 }
 
-.mapa_y_datos__datos--datos h4 {
+.mapa_y_datos__datos--datos strong {
   font-weight: 100;
 }
 
-.banner__quienes_somos {
-  background-image: url(../images/quienes_somos/banner.jfif);
+.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
   background-size: cover;
-  background-position: center;
-  background-position-y: top;
-  padding: 10px;
-  min-height: 400px;
+  min-height: 70vh;
   display: flex;
-  justify-content: left;
-  align-content: center;
+  align-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+  position: relative;
 }
 
-.banner__quienes_somos--titulo {
-  font-size: 110%;
-  align-self: flex-start;
-  width: 40%;
-  margin-left: 10%;
-  line-height: 1.9;
+.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+  z-index: 1;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+  font-size: 300%;
+  width: 100%;
+}
+
+.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+  z-index: 0;
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.descripcion__quienes_somos {
+  margin: 30px;
+  padding: 30px;
+  font-weight: 100;
+  text-align: center;
 }
 
 .razones {
@@ -574,11 +815,12 @@ main {
   padding-top: 50px;
   padding-bottom: 150px;
   background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #0c0738 100%);
+  background: linear-gradient(0deg, #303030 0%, #161518 100%);
 }
 
 .razones__articulo {
-  background-color: #772323;
+  opacity: 0.7;
+  background-color: #856c36;
   border-radius: 16px;
   padding: 10px;
   text-align: center;
@@ -603,8 +845,8 @@ main {
 }
 
 .razones__articulo:hover {
-  background-color: #a14242;
   transform: scale(105%);
+  opacity: 1;
 }
 
 .razones__articulo:hover .razones__articulo--imagen {
@@ -613,31 +855,48 @@ main {
   transform: scale(110%);
 }
 
-.banner__servicios {
-  background-image: url(../images/servicios/banner.jpg);
+.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
   background-size: cover;
-  padding: 10px;
-  min-height: 400px;
+  min-height: 70vh;
   display: flex;
-  justify-content: left;
-  align-content: center;
+  align-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+  position: relative;
 }
 
-.banner__servicios--titulo {
-  font-size: 110%;
-  align-self: flex-start;
-  width: 40%;
-  margin-left: 10%;
-  line-height: 1.9;
+.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+  z-index: 1;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+  font-size: 300%;
+  width: 100%;
+}
+
+.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+  z-index: 0;
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.descripcion__servicios {
+  margin: 30px;
+  padding: 30px;
+  font-weight: 100;
+  text-align: center;
 }
 
 .servicios {
   padding-top: 50px;
   padding-bottom: 150px;
   background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #0c0738 100%);
+  background: linear-gradient(0deg, #303030 0%, #161518 100%);
 }
 
 .servicios__articulo {
@@ -696,36 +955,43 @@ main {
   background-image: url(../images/servicios/pulido2.jpg);
 }
 
-.banner__trabajos {
-  background-image: url(../images/trabajos/banner.png);
+.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
   background-size: cover;
-  background-position: center;
-  padding: 10px;
-  min-height: 100px;
+  min-height: 70vh;
   display: flex;
-  justify-content: left;
-  align-content: center;
+  align-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+  position: relative;
 }
 
-.banner__trabajos--titulo {
-  font-size: 110%;
-  align-self: flex-start;
-  width: 40%;
-  margin-left: 10%;
-  line-height: 1.9;
+.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+  z-index: 1;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+  font-size: 300%;
+  width: 100%;
+}
+
+.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+  z-index: 0;
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .trabajos {
-  background-color: #772323;
   padding: 10px;
   width: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border-radius: 20px;
   margin: 10px;
 }
 
@@ -735,6 +1001,7 @@ main {
 }
 
 .trabajos img {
+  background-color: #856c36;
   height: 180px;
   width: 270px;
   margin: 2px;
@@ -757,7 +1024,7 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #0c0738 100%);
+  background: linear-gradient(0deg, #303030 0%, #161518 100%);
 }
 
 .testimonios__articulo {
@@ -777,11 +1044,11 @@ main {
 }
 
 .testimonios__articulo:hover {
-  background-color: #772323;
+  background-color: #856c36;
 }
 
 .testimonios__articulo--vermas {
-  background-color: #6e6e6e;
+  background-color: darkgray;
   transition: all 0.5s;
   border-radius: 16px;
   padding: 10px;
@@ -793,12 +1060,12 @@ main {
 }
 
 .testimonios__articulo--vermas:hover {
-  background-color: #772323;
+  background-color: #856c36;
   transform: scale(105%);
 }
 
 .testimonios__articulo--dejarcomentario {
-  background-color: #6d6969;
+  background-color: darkgray;
   transition: all 0.5s;
   border-radius: 16px;
   padding: 10px;
@@ -806,12 +1073,11 @@ main {
   text-align: center;
   margin: 10px;
   height: fit-content;
-  height: fit-content;
   align-self: flex-end;
 }
 
 .testimonios__articulo--dejarcomentario:hover {
-  background-color: #772323;
+  background-color: #856c36;
   transform: scale(105%);
 }
 
@@ -832,7 +1098,7 @@ main {
     font-size: 40px;
     margin: 30px;
     padding: 10px;
-    background-color: #772323;
+    background-color: #856c36;
   }
   .header__logo img {
     width: 70%;
@@ -841,9 +1107,12 @@ main {
   .header__links {
     display: none;
   }
+  .header__links li:hover {
+    background-color: #161518;
+  }
   #menubar {
     display: flex;
-    background-color: rgba(161, 48, 48, 0.97);
+    background-color: #856c36;
     width: 80%;
     height: 100vh;
     position: fixed;
@@ -899,8 +1168,17 @@ main {
     height: 550px;
   }
   .bannerinicio__titulo {
-    margin-top: 50px;
-    font-size: 200%;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .bannerinicio__titulo--tuauto {
+    display: inline;
+    font-size: 30px;
+  }
+  .bannerinicio__titulo--impecable {
+    display: inline;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
   }
   .ultimos_trabajos_contenedor {
     display: grid;
@@ -910,8 +1188,10 @@ main {
     height: fit-content;
   }
   .banner__contacto__titulo {
-    font-size: 90%;
+    font-size: 80%;
     margin-top: 20px;
+    width: 80%;
+    transform: translateY(30px);
   }
   .banner__contacto__formulario {
     height: 80%;

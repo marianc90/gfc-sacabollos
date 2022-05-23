@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taller dedicado al servicio de reparación de bollos por granizo y demás, en chapas de auto">
+    <meta name="keywords" content="granizo, chapa, reparacion, autos, choques, arreglos, pintura, pulido, taller, sacabollos, bollos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -11,12 +13,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Taller Sacabollos</title>
+    <title>Taller Sacabollos - CEC -</title>
 </head>
 <body>
+    
    <header class="header">
         <div class="header__logo">
             <a href="index.html"><img src="images/logo.png" alt="header_logo"></a> 
@@ -68,9 +73,11 @@
         
 
         <div class="bannerinicio">
-        
-               <H1 class="bannerinicio__titulo">Tu auto, impecable</H1>
-            
+
+                <div class="bannerinicio__titulo">
+               <H1 class="bannerinicio__titulo--tuauto">TU AUTO</H1> <H1 class="bannerinicio__titulo--impecable">impecable</H1>
+                  </div>
+                  <div data-aos="fade-in" data-aos-duration="2000">
                 <div class="bannerinicio__agenda--contenedor" id="agenda_de_visitas">
                     <div class="bannerinicio__agenda--contenido">
                     <h3>Agendá tu visita</h3>
@@ -95,74 +102,79 @@
 
                      </div>
                 </div>
+              </div>
                </div>
             </div>
 
         </section>
 
         <section id="que_hacemos" class="que_hacemos">
-            <h2>¿Qué hacemos?</h2>
+            <h2 data-aos="fade-in">¿Qué hacemos?</h2>
             <div class="que_hacemos_box">
     
-            <article>
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <article>
                 <img class="que_hacemos__img" src="images/quehacemos1.png" alt="img_reparamos">
                 
                   <h4>REPARAMOS:</h4>
                     <ul>
-                        <li>Bollos por granizo</li>
-                        <li>Golpes de estacionamiento</li>
-                        <li>Bollos en chapa y paragolpes</li>
-                        <li>Portazos</li>
+                        <li><span> Bollos por granizo</span></li>
+                        <li><span>Golpes de estacionamiento</span></li>
+                        <li><span>Bollos en chapa y paragolpes</span></li>
+                        <li><span>Portazos</span></li>
                     </ul>
-               
-            </article>
+                </article>
+            </div>
             
-            <article>
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <article>
                 <img class="que_hacemos__img" src="images/quehacemos2.png" alt="img_ventajas">
                
                    <h4>VENTAJAS:</h4> 
                     <ul>
-                        <li>Conservar el acabado original de su vehículo</li>
-                        <li>Mejorar el valor de reventa</li>
-                        <li>Seguro para el medio ambiente, ya que no se utilizan productos químicos</li>
-                        <li>Las reparaciones se realizan en el día</li>
+                        <li><span>Conservar el acabado original de su vehículo</span></li>
+                        <li><span>Mejorar el valor de reventa</span></li>
+                        <li><span>Seguro para el medio ambiente, ya que no se utilizan productos químicos</span></li>
+                        <li><span>Las reparaciones se realizan en el día</span></li>
                     </ul>
-                
-            </article>
+                </article>
+            </div>
            
-            <article>
+            <div  data-aos="fade-up" data-aos-duration="2000">
+              <article>
                 <img class="que_hacemos__img" src="images/quehacemos3.png" alt="img_segurosytarjetas">
                
                    <h4>MEDIOS DE PAGO:</h4> 
                     <ul>
-                        <li>Tarjetas de débito y crédito (1 pago)</li>
-                        <li>Transferencias</li>
-                        <li>Mercado Pago</li>
-                        <li>Efectivo</li>
+                        <li><span>Tarjetas de débito y crédito (1 pago)</span></li>
+                        <li><span>Transferencias</span></li>
+                        <li><span>Mercado Pago</span></li>
+                        <li><span>Efectivo</span></li>
                     </ul>
-                
-            </article>
+               </article> 
+            </div>
     
-            <article>
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <article>
                 <img class="que_hacemos__img" src="images/quehacemos4.png" alt="img_satisfaccion">
                
                     <h4>GARANTÍA DE SATISFACCIÓN:</h4>
                     <ul>
-                        <li>Compromiso con nuestros clientes</li>
-                        <li>Satisfacción con los resultados</li>
-                        <li>Años de experiencia</li>
-                        <li>Dedicación y responsabilidad</li>
+                        <li><span>Compromiso con nuestros clientes</span></li>
+                        <li><span>Satisfacción con los resultados</span></li>
+                        <li><span>Años de experiencia</span></li>
+                        <li><span>Dedicación y responsabilidad</span></li>
                     </ul>
-               
-            </article>
+               </article>
+            </div>
         </div>
                  </section>
 
-        <h2>Últimos trabajos</h2>
+        <h2 data-aos="fade-in">Últimos trabajos</h2>
         
 <section class="ultimos_trabajos_contenedor">
 
-        <div id="ultimos_trabajos" class="ultimos_trabajos">
+        <div data-aos="fade-in" data-aos-duration="3000" id="ultimos_trabajos" class="ultimos_trabajos">
         
                 <ul>
                 <li>
@@ -180,12 +192,12 @@
         </div>
         
 
-        <div class="card text-white bg-dark m-4" >
+        <div data-aos="fade-in" data-aos-duration="3000" class="card text-white bg-dark m-4" >
             
             <div class="card-body">
               <h4 class="card-title text-center mt-5">¿Querés ver más trabajos realizados?</h4>
               <div class="d-grid gap-2 m-5">
-               <button class="btn btn-primary" type="button" ><a href="pages/trabajos_realizados.html"> ¡Click acá!</a></button>
+               <button class="btn boton-mastrabajos" type="button" ><a href="pages/trabajos_realizados.html"> ¡Click acá!</a></button>
               </div>
             </div>
         </div>
@@ -220,8 +232,8 @@
 
             <h4>Contacto</h4>
              <span>
-            Teléfono:<br> +54911-6515-2742<br>
-            Correo:<br> test@gmail.com<br>
+            Teléfono:<br> +54911-6515-4788<br>
+            Correo:<br> cristian.cuartero@gmail.com<br>
             Dirección:<br>
             Av Juan de Garay 4201, CABA<br>
             Horarios:<br>
@@ -241,8 +253,8 @@
         <h4 class="footer__redes--redestitulo">Redes Sociales</h4>
            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook" width="40"></a> 
            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter" width="40"></a> 
-           <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram" width="40"></a>
-           <a href="https://www.whatsapp.com"><img src="images/whatsapp.png" alt="whatsapp" width="40"></a>  
+           <a href="https://www.instagram.com/cecprosacabollos/" target="_blank"><img src="images/instagram.png" alt="instagram" width="40"></a>
+           
         
         
 
@@ -253,6 +265,13 @@
           </div>
 
     </footer>
+    
+    <a class="whatsapp_link" href="https://wa.me/5491165154788" target="_blank"><img src="images/whatsapp.png" alt="whatsapp" width="40"></a>  
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
