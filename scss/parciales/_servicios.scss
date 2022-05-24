@@ -49,43 +49,43 @@
 
         &--granizo{
     
-            background-image: url(../images/servicios/granizo.jpg);
+            background-image: url(//i.imgur.com/RV0K6Gn.jpg);
             @include fondo_animacion(cover, all 1s);
            
         
             &:hover{
-                background-image: url(../images/servicios/granizo2.jpg);
+                background-image: url(//i.imgur.com/48TJxPn.jpg);
             }
         }
 
         &--paragolpes{
-            background-image: url(../images/servicios/paragolpes.jpg);
+            background-image: url(//i.imgur.com/LQSmsch.jpg);
             @include fondo_animacion(cover, all 1s);
 
             &:hover{
-                background-image: url(../images/servicios/paragolpes2.jpg);
+                background-image: url(//i.imgur.com/JQf497Z.jpg);
             
             }
         
         }
 
         &--accidentes{
-            background-image: url(../images/servicios/accidentes.jpg);
+            background-image: url(//i.imgur.com/DHfAyXL.jpg);
             @include fondo_animacion(cover, all 1s);
 
             &:hover{
-                background-image: url(../images/servicios/accidentes2.jpg);
+                background-image: url(//i.imgur.com/lowNIPv.jpg);
                 
             }
             
         }
 
         &--pulido{
-            background-image: url(../images/servicios/pulido.jpg);
+            background-image: url(//i.imgur.com/lHBV1YV.jpg);
             @include fondo_animacion(cover, all 1s);
 
             &:hover{
-                background-image: url(../images/servicios/pulido2.jpg);
+                background-image: url(//i.imgur.com/UUqKBAQ.jpg);
             }
             
         }

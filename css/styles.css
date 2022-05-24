@@ -699,7 +699,7 @@ main {
 }
 
 .banner__contacto {
-  background-image: url(../images/contact-bannerjpg.jpg);
+  background-image: url(//i.imgur.com/768dbFm.jpg);
   background-size: cover;
   justify-content: space-around;
   min-height: 70vh;
@@ -919,43 +919,43 @@ main {
 }
 
 .servicios__articulo--granizo {
-  background-image: url(../images/servicios/granizo.jpg);
+  background-image: url(//i.imgur.com/RV0K6Gn.jpg);
   background-size: cover;
   transition: all 1s;
 }
 
 .servicios__articulo--granizo:hover {
-  background-image: url(../images/servicios/granizo2.jpg);
+  background-image: url(//i.imgur.com/48TJxPn.jpg);
 }
 
 .servicios__articulo--paragolpes {
-  background-image: url(../images/servicios/paragolpes.jpg);
+  background-image: url(//i.imgur.com/LQSmsch.jpg);
   background-size: cover;
   transition: all 1s;
 }
 
 .servicios__articulo--paragolpes:hover {
-  background-image: url(../images/servicios/paragolpes2.jpg);
+  background-image: url(//i.imgur.com/JQf497Z.jpg);
 }
 
 .servicios__articulo--accidentes {
-  background-image: url(../images/servicios/accidentes.jpg);
+  background-image: url(//i.imgur.com/DHfAyXL.jpg);
   background-size: cover;
   transition: all 1s;
 }
 
 .servicios__articulo--accidentes:hover {
-  background-image: url(../images/servicios/accidentes2.jpg);
+  background-image: url(//i.imgur.com/lowNIPv.jpg);
 }
 
 .servicios__articulo--pulido {
-  background-image: url(../images/servicios/pulido.jpg);
+  background-image: url(//i.imgur.com/lHBV1YV.jpg);
   background-size: cover;
   transition: all 1s;
 }
 
 .servicios__articulo--pulido:hover {
-  background-image: url(../images/servicios/pulido2.jpg);
+  background-image: url(//i.imgur.com/UUqKBAQ.jpg);
 }
 
 .banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
