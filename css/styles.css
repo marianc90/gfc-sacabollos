@@ -600,11 +600,14 @@ main {
 
 .que_hacemos {
   padding: 15px;
+  padding-top: 70px;
   background: #303030;
   background: linear-gradient(180deg, #303030 0%, #161518 100%);
 }
 
 .que_hacemos_box {
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -809,6 +812,7 @@ main {
 
 .descripcion__quienes_somos {
   margin: 30px;
+  margin-top: 80px;
   padding: 30px;
   font-weight: 100;
   text-align: center;
@@ -816,8 +820,8 @@ main {
 
 .razones {
   height: auto;
-  padding-top: 50px;
-  padding-bottom: 150px;
+  padding-top: 7s0px;
+  padding-bottom: 70px;
 }
 
 .razones__articulo {
@@ -857,6 +861,10 @@ main {
   transform: scale(110%);
 }
 
+.quienes_somos__presencia {
+  margin-bottom: 70px;
+}
+
 .banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
   background-size: cover;
   min-height: 70vh;
@@ -890,6 +898,7 @@ main {
 
 .descripcion__servicios {
   margin: 30px;
+  margin-top: 80px;
   padding: 30px;
   font-weight: 100;
   text-align: center;
@@ -997,6 +1006,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 10px;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .trabajos_contenedor {
