@@ -1010,6 +1010,11 @@ main {
   margin-top: 80px;
 }
 
+.videos iframe {
+  width: 100%;
+  height: 315px;
+}
+
 .trabajos {
   padding: 10px;
   width: fit-content;

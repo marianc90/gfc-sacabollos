@@ -19,6 +19,10 @@
 
 .videos{
     margin-top: 80px;
+    & iframe{
+        width: 100%;
+        height: 315px;
+    }
 
 }
 
