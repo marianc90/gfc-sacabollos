@@ -46,6 +46,19 @@
         object-fit: cover;
      }
 
+     &__carrousel{
+            padding: 30px;
+         &--carrousel{
+             width: 100%;
+             &--imagenes{
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+                object-position: center;
+                overflow: hidden;
+             }
+         }
+     }
 }
 
 $tarjetagris: (

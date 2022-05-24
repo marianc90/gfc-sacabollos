@@ -31,6 +31,7 @@ $dorado:linear-gradient(90deg, rgba(214,182,97,1) 0%, rgba(119,100,78,1) 0%, rgb
   object-fit: cover;
   height: 100%;
   width: 100%;
+  filter: blur(2px);
 }
 
 * {
@@ -476,6 +477,7 @@ main {
 }
 
 .bannerinicio_carousel--imagenes {
+  filter: blur(2px) brightness(0.5);
   width: 100%;
   height: 700px;
   object-fit: cover;
@@ -693,6 +695,7 @@ main {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  filter: blur(2px);
 }
 
 .banner__contacto {
@@ -801,6 +804,7 @@ main {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  filter: blur(2px);
 }
 
 .descripcion__quienes_somos {
@@ -814,8 +818,6 @@ main {
   height: auto;
   padding-top: 50px;
   padding-bottom: 150px;
-  background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #161518 100%);
 }
 
 .razones__articulo {
@@ -883,6 +885,7 @@ main {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  filter: blur(2px);
 }
 
 .descripcion__servicios {
@@ -983,6 +986,7 @@ main {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  filter: blur(2px);
 }
 
 .trabajos {
@@ -1016,6 +1020,22 @@ main {
 .trabajos_borde_galeria {
   padding: 10px;
   object-fit: cover;
+}
+
+.trabajos__carrousel {
+  padding: 30px;
+}
+
+.trabajos__carrousel--carrousel {
+  width: 100%;
+}
+
+.trabajos__carrousel--carrousel--imagenes {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }
 
 .testimonios {
