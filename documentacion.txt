@@ -1,19 +1,22 @@
-Se agregó un archivo (_extend.scss) para llamarlo mediante la función @extend en los banner principales de las paginas contacto, quienes somos, y servicios y las propiedades que tienen en común. (utilizado en los parciales .scss de c/u, línea 4) Agregué un @import a cada hoja.scss donde utilicé el extend, ya que si no, no funcionaba.
-Se agregó un mixin en _servicios.scss cpara el backgrund size y transition de cada tarjeta, a partir de la línea 13.
-Y otro en _media_queries.scss en la línea 82 para llamar posteriomente al alto de 550px.
-Se agregó un mapa en _trabajos.scss y se lo llamó dos veces mediante map-get para el estilo de los botones VER MAS y DEJANOS TU COMENTARIO. Linea 60.
+SASS II:
 
-Condicional
-Each
+-Se agregó un archivo (_extend.scss) para llamarlo mediante la función @extend en los banner principales de las paginas contacto, quienes somos, y servicios y las propiedades que tienen en común. (utilizado en los parciales .scss de c/u, línea 4) Agregué un @import a cada hoja.scss donde utilicé el extend, ya que si no, no funcionaba.
+
+-Se agregó un mixin en _servicios.scss cpara el backgrund size y transition de cada tarjeta, a partir de la línea 13.
+Y otro en _media_queries.scss en la línea 82 para llamar posteriomente al alto de 550px.
+
+-Se agregó un mapa en _trabajos.scss y se lo llamó dos veces mediante map-get para el estilo de los botones VER MAS y DEJANOS TU COMENTARIO. Linea 60.
+
+-Se utilizaron las variables de colores en la mayoría del sitio.
+
+-Se agregaron todas las fotos y videos a servidores externos.
 
 Con respecto al SEO:
-Se agregaron las meta keywords y description respectivamente.
-se revisó la utilización de encabezados-
-Se verificó el responsive.
 
+-Se agregaron las meta keywords y description respectivamente.
+-se revisó la utilización de encabezados-
+-Se verificó el responsive.
 
+No solicitado para este desafío:
 
-imágenes videos
-
-https://imgur.com/whxDhlc video1
-
+-Se aplicó un rediseño al sitio y se agregó la libraría AOS para agregar animaciones en scroll.
