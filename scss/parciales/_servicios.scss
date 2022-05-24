@@ -19,7 +19,7 @@
 
 .descripcion__servicios{
     margin: 30px;
-    margin-top: 80px;
+    margin-top: 150px;
     padding: 30px;
     font-weight: 100;
     text-align: center;
@@ -28,7 +28,7 @@
 }
 
 .servicios{
-    padding-top: 50px;
+    padding-top: 150px;
     padding-bottom: 150px;
     background: rgb(48,48,48);
     background: linear-gradient(0deg, $gris_oscuro 0%, $azul_oscuro 100%);
@@ -92,4 +92,8 @@
         }
         
     }
+}
+
+.servicios__texto{
+    font-weight: 100;
 }

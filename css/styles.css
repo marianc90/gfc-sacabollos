@@ -600,13 +600,13 @@ main {
 
 .que_hacemos {
   padding: 15px;
-  padding-top: 70px;
+  padding-top: 150px;
   background: #303030;
   background: linear-gradient(180deg, #303030 0%, #161518 100%);
 }
 
 .que_hacemos_box {
-  margin-top: 60px;
+  margin-top: 150px;
   margin-bottom: 60px;
   display: flex;
   flex-direction: row;
@@ -812,7 +812,7 @@ main {
 
 .descripcion__quienes_somos {
   margin: 30px;
-  margin-top: 80px;
+  margin-top: 150px;
   padding: 30px;
   font-weight: 100;
   text-align: center;
@@ -820,7 +820,7 @@ main {
 
 .razones {
   height: auto;
-  padding-top: 7s0px;
+  padding-top: 150px;
   padding-bottom: 70px;
 }
 
@@ -898,14 +898,14 @@ main {
 
 .descripcion__servicios {
   margin: 30px;
-  margin-top: 80px;
+  margin-top: 150px;
   padding: 30px;
   font-weight: 100;
   text-align: center;
 }
 
 .servicios {
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 150px;
   background: #303030;
   background: linear-gradient(0deg, #303030 0%, #161518 100%);
@@ -967,6 +967,10 @@ main {
   background-image: url(//i.imgur.com/UUqKBAQ.jpg);
 }
 
+.servicios__texto {
+  font-weight: 100;
+}
+
 .banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
   background-size: cover;
   min-height: 70vh;
@@ -996,6 +1000,14 @@ main {
   height: 100%;
   width: 100%;
   filter: blur(2px);
+}
+
+.fotos {
+  margin-top: 150px;
+}
+
+.videos {
+  margin-top: 80px;
 }
 
 .trabajos {
