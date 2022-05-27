@@ -343,7 +343,7 @@ main {
 }
 
 .header__links {
-  font-size: 15px;
+  font-size: 13px;
   list-style: none;
   border-radius: 0px;
   display: flex;
@@ -464,7 +464,7 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .bannerinicio_contenedor {
@@ -486,7 +486,7 @@ main {
 }
 
 .bannerinicio__titulo {
-  align-self: flex-start;
+  align-self: center;
   color: white;
   font-weight: 400;
   font-size: 270%;
@@ -511,16 +511,30 @@ main {
   animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.bannerinicio__agenda--contenedor {
+.bannerinicio__agenda--contenedor-desktop {
   background: #856c36;
   width: 270px;
-  height: 286px;
+  height: 320px;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 1s;
 }
 
-.bannerinicio__agenda--contenedor:hover {
+.bannerinicio__agenda--contenedor-desktop:hover {
+  transform: scale(105%);
+}
+
+.bannerinicio__agenda--contenedor-mobile {
+  display: none;
+  background: #856c36;
+  width: 270px;
+  height: 320px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 1s;
+}
+
+.bannerinicio__agenda--contenedor-mobile:hover {
   transform: scale(105%);
 }
 
@@ -529,7 +543,7 @@ main {
   position: relative;
   background-color: #161518;
   width: 254px;
-  height: 270px;
+  height: 300px;
   border-radius: 16px;
   margin: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -545,11 +559,12 @@ main {
 }
 
 .bannerinicio__agenda--contenido form {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
   margin-top: 5px;
   margin-left: 20px;
   color: white;
-  line-height: 30px;
   font-weight: 100;
 }
 
@@ -664,7 +679,7 @@ main {
   filter: drop-shadow(5px 5px 5px #222);
 }
 
-.boton-mastrabajos {
+.boton-marron {
   color: #fff;
   background-color: #856c36;
   border-color: #856c36;
@@ -704,26 +719,19 @@ main {
 .banner__contacto {
   background-image: url(//i.imgur.com/768dbFm.jpg);
   background-size: cover;
-  justify-content: space-around;
   min-height: 70vh;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
-  padding-top: 30px;
+  padding: 60px;
 }
 
 .banner__contacto__formulario {
   font-weight: 100;
-  width: 480px;
-  min-width: 480px;
-  height: 250px;
-  margin: 20px;
-  font-size: smaller;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding-left: 60px;
 }
 
 .mapa_y_datos {
@@ -1216,17 +1224,26 @@ main {
     height: 550px;
   }
   .bannerinicio__titulo {
-    margin-top: 100px;
-    margin-left: 50px;
+    align-self: flex-end;
+    text-align: center;
   }
   .bannerinicio__titulo--tuauto {
     display: inline;
-    font-size: 30px;
+    font-size: 40px;
   }
   .bannerinicio__titulo--impecable {
     display: inline;
     font-family: 'Great Vibes', cursive;
-    font-size: 50px;
+    font-size: 60px;
+  }
+  .bannerinicio__agenda--contenedor-desktop {
+    display: none;
+  }
+  .bannerinicio__agenda--contenedor-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
   }
   .ultimos_trabajos_contenedor {
     display: grid;
@@ -1236,18 +1253,20 @@ main {
     height: fit-content;
   }
   .banner__contacto__titulo {
-    font-size: 80%;
-    margin-top: 20px;
-    width: 80%;
-    transform: translateY(30px);
+    padding: 0;
+    padding-top: 45vh;
+    padding-bottom: 5vh;
+    font-size: 90%;
   }
   .banner__contacto__formulario {
-    height: 80%;
-    margin: 10px;
-    font-size: large;
-    flex-direction: column;
-    text-align: center;
-    transform: scale(70%);
+    padding: 0;
+    font-size: 90%;
+  }
+  .form-control-lg {
+    line-height: 0.5rem;
+    min-height: 0.5px;
+    padding: 1px;
+    font-size: 1rem;
   }
   .mapa_y_datos {
     font-size: small;

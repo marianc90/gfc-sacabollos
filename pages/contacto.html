@@ -57,49 +57,42 @@
                   <p>Envianos tu consulta y despejá tus dudas</p>
            
              </div>
-            <form class="banner__contacto__formulario" action="" method="get" enctype="multipart">
-               
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingresar su Nombre">
-                </div>
-                <div>
-                    <label for="auto">Modelo:</label>
-                    <input type="text" id="auto" name="auto" placeholder="Ingresar su auto">
-                </div>
-                <div>
-                    <label for="correo">@E-mail:</label>
-                    <input type="email" id="correo" name="correo" placeholder="Ingresar su correo">
-                </div>
+            
 
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresar su teléfono">
-                </div>
-                <label for="comentario">Comentario:</label>
-                <div>
+             <form action="" class="banner__contacto__formulario m-auto" data-aos="fade-in" data-aos-duration="3000">
+                    <hr class="my-4" />
+                    <div class="form-group mb-3 row"><label for="nombre1" class="col-md-5 col-form-label">Nombre</label>
+                        <div class="col-md-7"><input type="text" class="form-control form-control-lg" id="nombre1" name="nombre" required></div>
+                    </div>
+                    <div class="form-group mb-3 row"><label for="modelo-de-auto2" class="col-md-5 col-form-label">Modelo de auto</label>
+                        <div class="col-md-7"><input type="text" class="form-control form-control-lg" id="modelo-de-auto2" name="modelo-de-auto" required></div>
+                    </div>
+                    <div class="form-group mb-3 row"><label for="telefono3" class="col-md-5 col-form-label">Teléfono</label>
+                        <div class="col-md-7"><input type="text" class="form-control form-control-lg" id="telefono3" name="telefono" required></div>
+                    </div>
+                    <div class="form-group mb-3 row"><label for="email4" class="col-md-5 col-form-label">Email</label>
+                        <div class="col-md-7"><input type="email" class="form-control form-control-lg" id="email4" name="email" required><small class="form-text text-muted"> Ingrese una dirección válida de email</small></div>
+                    </div>
+                    <hr class="bg-transparent border-0 py-1" />
+                    <div class="form-group mb-3 row"><label for="su-mensaje7" class="col-md-5 col-form-label">Su mensaje</label>
+                        <div class="col-md-7"><textarea class="form-control form-control-lg" id="su-mensaje7" name="su-mensaje" required></textarea></div>
+                    </div>
+                    <div>
                     
-                    <textarea placeholder="Su comentario" name="comentario" id="comentario" cols="51" rows="10">
-                    </textarea>
-                </div>
-                
-                <div>
-                    
-                    <label for="">Granizo</label>
-                    <input type="radio" name="servicio" id="granizo">
-                    <label for="">Golpes</label>
-                    <input type="radio" name="servicio" id="golpes">
-                    <label for="">Pulido</label>
-                    <input type="radio" name="servicio" id="pulido">
-                    <input type="submit" value="Enviar">
-    
-                </div>
-                
-                
-                </div>   
-                <div>
-                            
-            </form>
+                        <label for="">Granizo</label>
+                        <input type="radio" name="servicio" id="granizo">
+                        <label for="">Golpes</label>
+                        <input type="radio" name="servicio" id="golpes">
+                        <label for="">Pulido</label>
+                        <input type="radio" name="servicio" id="pulido">
+        
+                    </div>
+                    <hr class="my-4" />
+                    <div class="form-group mb-3 row"><label for="enviar-mensaje9" class="col-md-5 col-form-label"></label>
+                        <div class="col-md-7"><button class="btn btn-primary btn-lg boton-marron" type="submit">Enviar mensaje</button></div>
+                    </div>
+                </form>
+           
           
         </section>
 

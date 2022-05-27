@@ -8,7 +8,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    flex-wrap: wrap;
+    align-items: flex-end;
+ 
 
         &_contenedor{
             width: 100%;
@@ -32,7 +33,7 @@
         }
 
         &__titulo{
-            align-self:flex-start;
+            align-self:center;
             color: white;
             font-weight: 400;
             font-size: 270%;
@@ -61,12 +62,12 @@
 
         &__agenda{
         
-            &--contenedor{
+            &--contenedor-desktop{
     
-   
+            
             background: $rojo_oscuro;
             width: 270px;
-            height: 286px;
+            height: 320px;
             border-radius: 16px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             transition: all 1s;
@@ -76,13 +77,28 @@
                 transform: scale(105%);
             }
         }
+            &--contenedor-mobile{
+    
+                display: none;
+                background: $rojo_oscuro;
+                width: 270px;
+                height: 320px;
+                border-radius: 16px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                transition: all 1s;
+    
+                &:hover{
+    
+                    transform: scale(105%);
+                }
+        }
 
         &--contenido {
             display: inline-block;
             position: relative;
             background-color: $azul_oscuro;
             width: 254px;
-            height: 270px;
+            height: 300px;
             border-radius: 16px;
             margin: 8px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -97,11 +113,12 @@
             }
 
             & form {
-                display: inline-block;
+                display: flex;
+                flex-direction: column;
+                width: 85%;
                 margin-top: 5px;
                 margin-left: 20px;
                 color: white;
-                line-height: 30px;
                 font-weight: 100;
             
             }
@@ -236,9 +253,11 @@
 
 }
 
-.boton-mastrabajos{
+.boton-marron{
+  
     color: #fff;
     background-color: $rojo_oscuro;
     border-color: $rojo_oscuro;
+    
 
 }

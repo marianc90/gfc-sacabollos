@@ -2,10 +2,12 @@
 
 .banner__contacto{
     background-image: url(//i.imgur.com/768dbFm.jpg);
+    // background-image: url(../../images/contact-bannerjpg.jpg);
     background-size: cover;
-    justify-content: space-around;
     min-height: 70vh;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
@@ -13,21 +15,12 @@
     &__titulo{
         @extend .banner__general__titulo;
         }
-        padding-top: 30px;
+        padding: 60px;
         
    
     &__formulario{
         font-weight: 100;
-        width: 480px;
-        min-width: 480px;
-        height: 250px;
-        margin: 20px;
-        font-size: smaller;
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
+        padding-left: 60px;
     }
 
 }
