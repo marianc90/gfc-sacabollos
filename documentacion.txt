@@ -1,3 +1,32 @@
+
+
+Se adecuó el responsive para el index y contacto.
+
+En el index mediante mediaqueries se hizo que el cartel de agenda quede fuera del banner, de manera que pueda apreciarse más.
+
+En el contacto se cambio el fomrulario por unos mas grandes y visuales.
+
+Se ordenaron los archivos y se elmiinaron lineas vacías del código.
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 SASS II:
 
 -Se agregó un archivo (_extend.scss) para llamarlo mediante la función @extend en los banner principales de las paginas contacto, quienes somos, y servicios y las propiedades que tienen en común. (utilizado en los parciales .scss de c/u, línea 4) Agregué un @import a cada hoja.scss donde utilicé el extend, ya que si no, no funcionaba.
