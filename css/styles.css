@@ -1215,13 +1215,13 @@ main {
     width: 150px;
   }
   .bannerinicio {
-    height: 550px;
+    height: 80vh;
   }
   .bannerinicio_contenedor {
-    height: 550px;
+    height: 80vh;
   }
   .bannerinicio_carousel--imagenes {
-    height: 550px;
+    height: 80vh;
   }
   .bannerinicio__titulo {
     align-self: flex-end;
@@ -1234,7 +1234,7 @@ main {
   .bannerinicio__titulo--impecable {
     display: inline;
     font-family: 'Great Vibes', cursive;
-    font-size: 60px;
+    font-size: 70px;
     margin-left: 50px;
   }
   .bannerinicio__agenda--contenedor-desktop {

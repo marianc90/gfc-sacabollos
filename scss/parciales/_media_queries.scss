@@ -90,14 +90,14 @@
 }
 
 .bannerinicio{
-    @include bannerinicioalto(550px);
+    @include bannerinicioalto(80vh);
 
     &_contenedor{
-        @include bannerinicioalto(550px);
+        @include bannerinicioalto(80vh);
     }
 
     &_carousel--imagenes{
-        @include bannerinicioalto(550px);
+        @include bannerinicioalto(80vh);
     }
 
     &__titulo{
@@ -111,7 +111,7 @@
     &--impecable{
         display: inline;
         font-family: 'Great Vibes', cursive;
-        font-size: 60px;
+        font-size: 70px;
         margin-left: 50px;
         }
     }
