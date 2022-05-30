@@ -23,6 +23,19 @@
     padding: 30px;
     font-weight: 100;
     text-align: center;
+
+    &__contenedorfinal{
+        background: rgb(48,48,48);
+        background: linear-gradient(0deg, $gris_oscuro 0%, $azul_oscuro 100%);
+    }
+
+    &__contenidofinal{
+        text-align: center;
+        font-weight: 100;
+        padding: 30px;
+        padding-bottom: 80px;
+    }
+    
    
     
 }
@@ -30,8 +43,7 @@
 .servicios{
     padding-top: 150px;
     padding-bottom: 150px;
-    background: rgb(48,48,48);
-    background: linear-gradient(0deg, $gris_oscuro 0%, $azul_oscuro 100%);
+    
 
     &__articulo{
         border-radius: 16px;

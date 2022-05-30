@@ -912,11 +912,21 @@ main {
   text-align: center;
 }
 
+.descripcion__servicios__contenedorfinal {
+  background: #303030;
+  background: linear-gradient(0deg, #303030 0%, #161518 100%);
+}
+
+.descripcion__servicios__contenidofinal {
+  text-align: center;
+  font-weight: 100;
+  padding: 30px;
+  padding-bottom: 80px;
+}
+
 .servicios {
   padding-top: 150px;
   padding-bottom: 150px;
-  background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #161518 100%);
 }
 
 .servicios__articulo {
