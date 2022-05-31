@@ -79,20 +79,20 @@
                     <h3>Agendá tu visita</h3>
                  <form action="https://formspree.io/f/xdobbbgg" method="post">
                      <label for="servicio">Tipo de servicio:</label>
-                      <select name="servicio" id="servicio">
+                      <select name="servicio" id="servicio" required>
                            <option value="granizo">Reparación de granizo</option>
                            <option value="golpe">Reparación de golpe</option>
                            <option value="pulido">Pulido</option>
                       </select>
                       <br>
                       <label for="nombre">Nombre:</label>
-                      <input type="name">
+                      <input type="text" id="nombre1" name="nombre" required>
                       <br>
                       <label for="telefono">Celular:</label>
-                      <input type="tel">
+                      <input type="text" id="telefono1" name="telefono" required>
                       <br>
                      <label for="elige_fecha">Fecha:</label>
-                     <input type="date" id="elige_fecha" name="elige_fecha" value="" min="" max="">
+                     <input type="date" id="elige_fecha" name="elige_fecha" value="" min="" max="" required>
                      <br>
                      <button class="btn boton-marron" type="submit" > Agendá!</button>
                     </form>
@@ -110,20 +110,20 @@
                 <h3>Agendá tu visita</h3>
                 <form action="https://formspree.io/f/xdobbbgg" method="post">
                   <label for="servicio">Tipo de servicio:</label>
-                   <select name="servicio" id="servicio">
+                   <select name="servicio" id="servicio" required>
                         <option value="granizo">Reparación de granizo</option>
                         <option value="golpe">Reparación de golpe</option>
                         <option value="pulido">Pulido</option>
                    </select>
                    <br>
                    <label for="nombre">Nombre:</label>
-                   <input type="name">
+                   <input type="text" id="nombre1" name="nombre" required>
                    <br>
                    <label for="telefono">Celular:</label>
-                   <input type="tel">
+                   <input type="text" id="telefono1" name="telefono" required>
                    <br>
                   <label for="elige_fecha">Fecha:</label>
-                  <input type="date" id="elige_fecha" name="elige_fecha" value="" min="" max="">
+                  <input type="date" id="elige_fecha" name="elige_fecha" value="" min="" max="" required>
                   <br>
                   <button class="btn boton-marron" type="submit" > Agendá!</button>
                  </form>
