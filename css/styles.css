@@ -1162,9 +1162,11 @@ main {
   .header__menubar {
     display: block;
     font-size: 40px;
-    margin: 30px;
+    margin: 20px;
     padding: 10px;
-    background-color: #856c36;
+  }
+  .header__menubar span {
+    color: #856c36;
   }
   .header__logo img {
     width: 70%;

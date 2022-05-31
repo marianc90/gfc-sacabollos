@@ -5,9 +5,13 @@
         &__menubar{
             display: block;
             font-size: 40px;
-            margin: 30px;
+            margin: 20px;
             padding: 10px;
-            background-color: $rojo_oscuro;
+       
+
+            & span{
+                color: $rojo_oscuro;
+            }
         }
 
         &__logo img{
