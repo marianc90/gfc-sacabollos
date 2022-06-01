@@ -57,6 +57,13 @@
             border-radius: 100px;
             -webkit-filter: drop-shadow(5px 5px 5px #222);
             filter: drop-shadow(5px 5px 5px #222);
+            transition: 0.5s;
+            filter: sepia(1);
+
+            &:hover{
+                transform: translatey(-4px);
+                filter: sepia(0);
+            }
             }
         
         &--redestitulo{

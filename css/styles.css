@@ -439,6 +439,13 @@ main {
   border-radius: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
+  transition: 0.5s;
+  filter: sepia(1);
+}
+
+.footer__redes img:hover {
+  transform: translatey(-4px);
+  filter: sepia(0);
 }
 
 .footer__redes--redestitulo {
@@ -1204,13 +1211,13 @@ main {
   .footer {
     background-color: #303030;
     display: grid;
-    padding: 20px;
+    padding: 10px;
     font-weight: 100;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "logo redes" "site contacto" "derechos derechos";
     justify-items: center;
-    gap: 30px;
+    gap: 20px;
     font-size: smaller;
   }
   .footer__logo {
@@ -1225,6 +1232,12 @@ main {
   }
   .footer__redes input {
     width: 150px;
+  }
+  .footer__contacto {
+    text-align: center;
+  }
+  .footer__nav {
+    text-align: center;
   }
   .bannerinicio {
     height: 80vh;
