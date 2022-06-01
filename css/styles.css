@@ -519,6 +519,7 @@ main {
 }
 
 .bannerinicio__agenda--contenedor-desktop {
+  opacity: 0.5;
   background: #856c36;
   width: 270px;
   height: 410px;
@@ -529,6 +530,11 @@ main {
 
 .bannerinicio__agenda--contenedor-desktop:hover {
   transform: scale(105%);
+  opacity: 1;
+}
+
+.bannerinicio__agenda--contenedor-desktop:focus-within {
+  opacity: 1;
 }
 
 .bannerinicio__agenda--contenedor-mobile {

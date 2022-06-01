@@ -64,7 +64,7 @@
         
             &--contenedor-desktop{
     
-            
+            opacity: 0.5;
             background: $rojo_oscuro;
             width: 270px;
             height: 410px;
@@ -75,8 +75,15 @@
             &:hover{
 
                 transform: scale(105%);
+                opacity: 1;
             }
-        }
+            
+            &:focus-within { 
+                 opacity: 1;
+            }
+            
+            }
+
             &--contenedor-mobile{
     
                 display: none;
