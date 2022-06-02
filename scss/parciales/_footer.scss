@@ -25,11 +25,12 @@
             border-radius: 100px;
             height: 100px;
             -webkit-filter: drop-shadow(5px 5px 5px #222);
-            filter: drop-shadow(5px 5px 5px #222);
+            filter: drop-shadow(5px 5px 5px #222) sepia(1);
             transition: all 0.5s;
 
             &:hover{
-                transform: scale(103%);
+                transform: translateY(-4px);
+                filter: sepia(0);
             }
          }
     }
