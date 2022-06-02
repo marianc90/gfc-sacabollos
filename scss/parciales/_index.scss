@@ -63,11 +63,11 @@
         &__agenda{
         
             &--contenedor-desktop{
-    
+            padding: 0;
             opacity: 0.4;
             background: $rojo_oscuro;
-            width: 270px;
-            height: 410px;
+            width: 254px;
+            height: 392px;
             border-radius: 16px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             transition: all 1s;
@@ -76,16 +76,23 @@
 
                 transform: scale(105%);
                 opacity: 1;
+                width: 270px;
+                height: 410px;
+                padding: 8px;
             }
             
             &:focus-within { 
                  opacity: 1;
+                 transform: scale(105%);
+                 width: 270px;
+                 height: 410px;
+                 padding: 8px;
             }
             
             }
 
             &--contenedor-mobile{
-    
+                padding: 8px;
                 display: none;
                 background: $rojo_oscuro;
                 width: 270px;
@@ -107,7 +114,7 @@
             width: 254px;
             height: 392px;
             border-radius: 16px;
-            margin: 8px;
+      
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         
             &  h3 {
@@ -116,7 +123,7 @@
                 font-weight: 400;
                 margin: 20px;
                 text-transform: uppercase;
-                font-weight: 100;
+                font-weight: 400;
             }
 
             & form {
