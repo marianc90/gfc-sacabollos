@@ -430,6 +430,14 @@ main {
   grid-area: contacto;
 }
 
+.footer__contacto a {
+  text-decoration: none;
+}
+
+.footer__contacto a:hover {
+  text-decoration: underline;
+}
+
 .footer__redes {
   grid-area: redes;
   line-height: 30px;
