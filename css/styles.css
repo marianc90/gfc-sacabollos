@@ -3,7 +3,7 @@ $azul_oscuro:rgba(12,7,56,1);
 $gris_oscuro:rgba(48,48,48,1);
 
 $dorado:linear-gradient(90deg, rgba(214,182,97,1) 0%, rgba(119,100,78,1) 0%, rgba(220,168,66,1) 72%, rgba(249,255,204,1) 100%); */
-.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
+.banner__general, .banner__trabajos, .banner__servicios, .banner__quienes_somos {
   background-size: cover;
   min-height: 70vh;
   display: flex;
@@ -14,18 +14,17 @@ $dorado:linear-gradient(90deg, rgba(214,182,97,1) 0%, rgba(119,100,78,1) 0%, rgb
   position: relative;
 }
 
-.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+.banner__general__titulo, .banner__trabajos__titulo, .banner__servicios__titulo, .banner__quienes_somos__titulo, .banner__contacto__titulo {
   z-index: 1;
   margin-bottom: 70px;
   text-align: center;
 }
-
-.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+.banner__general__titulo h1, .banner__trabajos__titulo h1, .banner__servicios__titulo h1, .banner__quienes_somos__titulo h1, .banner__contacto__titulo h1 {
   font-size: 300%;
   width: 100%;
 }
 
-.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+.banner__general--video, .banner__trabajos--video, .banner__servicios--video, .banner__quienes_somos--video {
   z-index: 0;
   position: absolute;
   object-fit: cover;
@@ -73,28 +72,28 @@ form {
 
 select {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   line-height: 20px;
 }
 
 input {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   line-height: 20px;
 }
 
 button {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   line-height: 20px;
 }
 
 textarea {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 13px;
   line-height: 20px;
 }
@@ -105,8 +104,8 @@ ul {
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif !important;
-  background-color: #161518;
+  font-family: "Noto Sans", sans-serif !important;
+  background-color: rgb(22, 21, 24);
   color: white;
 }
 
@@ -122,7 +121,6 @@ main {
   -webkit-animation: heartbeat 3s ease-in-out infinite both;
   animation: heartbeat 3s ease-in-out infinite both;
 }
-
 .whatsapp_link:hover {
   -webkit-animation: rotate-scale-up 0.65s linear both;
   animation: rotate-scale-up 0.65s linear both;
@@ -138,7 +136,6 @@ main {
     transform: translatey(0);
   }
 }
-
 @keyframes animationMain {
   0% {
     opacity: 0;
@@ -147,7 +144,6 @@ main {
     opacity: 100;
   }
 }
-
 @keyframes glow {
   0% {
     text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.1em white;
@@ -159,7 +155,6 @@ main {
     text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.1em white;
   }
 }
-
 @keyframes slide {
   0% {
     margin-left: 0px;
@@ -171,7 +166,6 @@ main {
     margin-left: -1800px;
   }
 }
-
 @-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -186,7 +180,6 @@ main {
     transform: scale(1) rotateZ(360deg);
   }
 }
-
 @keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -201,7 +194,6 @@ main {
     transform: scale(1) rotateZ(360deg);
   }
 }
-
 @-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -236,7 +228,6 @@ main {
     animation-timing-function: ease-out;
   }
 }
-
 @keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -271,7 +262,6 @@ main {
     animation-timing-function: ease-out;
   }
 }
-
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -284,7 +274,6 @@ main {
     opacity: 1;
   }
 }
-
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -297,7 +286,6 @@ main {
     opacity: 1;
   }
 }
-
 ::-webkit-scrollbar {
   width: 6px;
   background-color: #F5F5F5;
@@ -314,7 +302,7 @@ main {
 }
 
 .header {
-  background-color: #161518;
+  background-color: rgb(22, 21, 24);
   font-weight: 100;
   position: sticky;
   top: 0;
@@ -326,10 +314,9 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #161518;
+  background: rgb(22, 21, 24);
   animation: 0.5s ease-out 0s 1 animationHeader;
 }
-
 .header__logo img {
   border-radius: 100px;
   margin: 15px;
@@ -337,11 +324,9 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.5s;
 }
-
 .header__logo img:hover {
   transform: scale(103%) translateY(14px);
 }
-
 .header__links {
   font-size: 13px;
   list-style: none;
@@ -351,7 +336,6 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-
 .header__links li {
   list-style: none;
   margin-right: 12px;
@@ -360,12 +344,10 @@ main {
   padding: 8px;
   border-radius: 5px;
 }
-
 .header__links li:hover {
   text-shadow: 2px 2px 2px black, 0 0 2em white, 0 0 0.5em white;
   background-color: #856c36;
 }
-
 .header__menubar {
   display: none;
 }
@@ -380,27 +362,24 @@ main {
 }
 
 .footer {
-  background-color: #303030;
+  background-color: rgb(48, 48, 48);
   display: grid;
   padding: 20px;
   font-weight: 100;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "logo site contacto redes" "logo site contacto redes" "derechos derechos derechos derechos";
+  grid-template-areas: "logo site contacto redes" "logo site contacto redes" "derechos derechos derechos derechos";
   justify-items: stretch;
   gap: 10px;
   font-size: 15px;
 }
-
 .footer h4 {
   margin-bottom: 30px;
   font-size: 15px;
 }
-
 .footer__logo {
   grid-area: logo;
 }
-
 .footer__logo img {
   border-radius: 100px;
   height: 100px;
@@ -408,42 +387,33 @@ main {
   filter: drop-shadow(5px 5px 5px #222) sepia(1);
   transition: all 0.5s;
 }
-
 .footer__logo img:hover {
   transform: translateY(-4px);
   filter: sepia(0);
 }
-
 .footer__nav {
   grid-area: site;
 }
-
 .footer__nav ul {
   list-style: none;
 }
-
 .footer__nav ul li:hover {
   font-weight: 400;
 }
-
 .footer__contacto {
   grid-area: contacto;
 }
-
 .footer__contacto a {
   text-decoration: none;
 }
-
 .footer__contacto a:hover {
   text-decoration: underline;
 }
-
 .footer__redes {
   grid-area: redes;
   line-height: 30px;
   text-align: center;
 }
-
 .footer__redes img {
   border-radius: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -451,21 +421,17 @@ main {
   transition: 0.5s;
   filter: sepia(1);
 }
-
 .footer__redes img:hover {
   transform: translatey(-4px);
   filter: sepia(0);
 }
-
 .footer__redes--redestitulo {
   margin-top: 1rem;
 }
-
 .footer__derechos {
   grid-area: derechos;
   text-align: center;
 }
-
 .footer__derechos h6 {
   margin-top: 2rem;
   font-size: 11px;
@@ -482,16 +448,13 @@ main {
   align-content: center;
   align-items: flex-end;
 }
-
 .bannerinicio_contenedor {
   width: 100%;
   height: 700px;
 }
-
 .bannerinicio_carousel {
   position: relative;
 }
-
 .bannerinicio_carousel--imagenes {
   filter: blur(2px) brightness(0.5);
   width: 100%;
@@ -500,7 +463,6 @@ main {
   object-position: center;
   overflow: hidden;
 }
-
 .bannerinicio__titulo {
   align-self: center;
   color: white;
@@ -513,20 +475,17 @@ main {
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-
 .bannerinicio__titulo--tuauto {
   display: inline;
   font-size: 48px;
 }
-
 .bannerinicio__titulo--impecable {
   display: inline;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 80px;
   -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
-
 .bannerinicio__agenda--contenedor-desktop {
   padding: 0;
   opacity: 0.4;
@@ -537,7 +496,6 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.5s;
 }
-
 .bannerinicio__agenda--contenedor-desktop:hover {
   transform: scale(105%);
   opacity: 1;
@@ -545,7 +503,6 @@ main {
   height: 410px;
   padding: 8px;
 }
-
 .bannerinicio__agenda--contenedor-desktop:focus-within {
   opacity: 1;
   transform: scale(105%);
@@ -553,7 +510,6 @@ main {
   height: 410px;
   padding: 8px;
 }
-
 .bannerinicio__agenda--contenedor-mobile {
   padding: 8px;
   display: none;
@@ -564,21 +520,18 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 1s;
 }
-
 .bannerinicio__agenda--contenedor-mobile:hover {
   transform: scale(105%);
 }
-
 .bannerinicio__agenda--contenido {
   display: inline-block;
   position: relative;
-  background-color: #161518;
+  background-color: rgb(22, 21, 24);
   width: 254px;
   height: 392px;
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .bannerinicio__agenda--contenido h3 {
   color: white;
   text-align: center;
@@ -587,7 +540,6 @@ main {
   text-transform: uppercase;
   font-weight: 400;
 }
-
 .bannerinicio__agenda--contenido form {
   display: flex;
   flex-direction: column;
@@ -598,6 +550,10 @@ main {
   font-weight: 100;
 }
 
+.contenedor__agenda {
+  align-self: center;
+}
+
 .ultimos_trabajos {
   height: 340px;
   border-radius: 15px;
@@ -606,27 +562,22 @@ main {
   overflow-x: hidden;
   animation: slide infinite 15s alternate;
 }
-
 .ultimos_trabajos:hover {
   animation-play-state: paused;
 }
-
 .ultimos_trabajos ul li {
   list-style: none;
   white-space: nowrap;
 }
-
 .ultimos_trabajos ul li img {
   width: 400px;
   height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.5s;
 }
-
 .ultimos_trabajos ul li img:hover {
   transform: scale(102%);
 }
-
 .ultimos_trabajos_enlace {
   display: inline-block;
   width: 150px;
@@ -635,21 +586,19 @@ main {
   text-align: center;
   font-weight: 100;
 }
-
 .ultimos_trabajos_contenedor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #161518 100%);
+  background: rgb(48, 48, 48);
+  background: linear-gradient(0deg, rgb(48, 48, 48) 0%, rgb(22, 21, 24) 100%);
 }
 
 .que_hacemos {
   padding: 15px;
   padding-top: 150px;
-  background: #303030;
-  background: linear-gradient(180deg, #303030 0%, #161518 100%);
+  background: rgb(48, 48, 48);
+  background: linear-gradient(180deg, rgb(48, 48, 48) 0%, rgb(22, 21, 24) 100%);
 }
-
 .que_hacemos_box {
   margin-top: 150px;
   margin-bottom: 60px;
@@ -658,7 +607,6 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .que_hacemos article {
   opacity: 0.7;
   display: inline-table;
@@ -672,11 +620,9 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.5s;
 }
-
 .que_hacemos article h4 {
   margin: 15px;
 }
-
 .que_hacemos article ul {
   list-style-image: url(../images/check.png);
   margin-left: 35px;
@@ -685,21 +631,17 @@ main {
   width: 80%;
   line-height: 30px;
 }
-
 .que_hacemos article ul span {
   top: -6px;
   position: relative;
 }
-
 .que_hacemos article:hover {
   transform: scale(105%);
   opacity: 1;
 }
-
 .que_hacemos article:hover .que_hacemos__img {
   transform: scale(130%);
 }
-
 .que_hacemos__img {
   width: 100px;
   height: 100px;
@@ -715,7 +657,7 @@ main {
   border-color: #856c36;
 }
 
-.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
+.banner__general, .banner__trabajos, .banner__servicios, .banner__quienes_somos {
   background-size: cover;
   min-height: 70vh;
   display: flex;
@@ -726,18 +668,17 @@ main {
   position: relative;
 }
 
-.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+.banner__general__titulo, .banner__trabajos__titulo, .banner__servicios__titulo, .banner__quienes_somos__titulo, .banner__contacto__titulo {
   z-index: 1;
   margin-bottom: 70px;
   text-align: center;
 }
-
-.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+.banner__general__titulo h1, .banner__trabajos__titulo h1, .banner__servicios__titulo h1, .banner__quienes_somos__titulo h1, .banner__contacto__titulo h1 {
   font-size: 300%;
   width: 100%;
 }
 
-.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+.banner__general--video, .banner__trabajos--video, .banner__servicios--video, .banner__quienes_somos--video {
   z-index: 0;
   position: absolute;
   object-fit: cover;
@@ -758,7 +699,6 @@ main {
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
   padding: 60px;
 }
-
 .banner__contacto__formulario {
   font-weight: 100;
   padding-left: 60px;
@@ -772,10 +712,9 @@ main {
   padding: 30px;
   flex-wrap: wrap;
   gap: 20px;
-  background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #161518 100%);
+  background: rgb(48, 48, 48);
+  background: linear-gradient(0deg, rgb(48, 48, 48) 0%, rgb(22, 21, 24) 100%);
 }
-
 .mapa_y_datos__mapa iframe {
   border-radius: 20px;
   width: 100%;
@@ -783,41 +722,34 @@ main {
   border: 0;
   transition: 1s;
 }
-
 .mapa_y_datos__mapa iframe:hover {
   transform: scale(105%);
 }
-
 .mapa_y_datos__datos {
   font-variant: normal;
 }
-
 .mapa_y_datos__datos--whatsapp {
   display: flex;
   flex-direction: row;
   align-items: center;
   transition: 1s;
 }
-
 .mapa_y_datos__datos--whatsapp:hover {
   transform: scale(105%);
 }
-
 .mapa_y_datos__datos--whatsapp img {
   margin: 20px;
   width: 60px;
 }
-
 .mapa_y_datos__datos--datos {
   padding: 15px;
   line-height: 2;
 }
-
 .mapa_y_datos__datos--datos strong {
   font-weight: 100;
 }
 
-.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
+.banner__general, .banner__trabajos, .banner__servicios, .banner__quienes_somos {
   background-size: cover;
   min-height: 70vh;
   display: flex;
@@ -828,18 +760,17 @@ main {
   position: relative;
 }
 
-.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+.banner__general__titulo, .banner__trabajos__titulo, .banner__servicios__titulo, .banner__quienes_somos__titulo, .banner__contacto__titulo {
   z-index: 1;
   margin-bottom: 70px;
   text-align: center;
 }
-
-.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+.banner__general__titulo h1, .banner__trabajos__titulo h1, .banner__servicios__titulo h1, .banner__quienes_somos__titulo h1, .banner__contacto__titulo h1 {
   font-size: 300%;
   width: 100%;
 }
 
-.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+.banner__general--video, .banner__trabajos--video, .banner__servicios--video, .banner__quienes_somos--video {
   z-index: 0;
   position: absolute;
   object-fit: cover;
@@ -861,7 +792,6 @@ main {
   padding-top: 150px;
   padding-bottom: 70px;
 }
-
 .razones__articulo {
   opacity: 0.7;
   background-color: #856c36;
@@ -871,28 +801,24 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.5s;
 }
-
 .razones__articulo--imagen {
   align-self: center;
   height: 100px;
   width: 100px;
   object-fit: cover;
-  -webkit-filter: drop-shadow(1px 1px 1px black);
-  filter: drop-shadow(1px 1px 1px black);
+  -webkit-filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
+  filter: drop-shadow(1px 1px 1px rgb(0, 0, 0));
   transition: all 1s;
 }
-
 .razones__articulo p {
   font-weight: 100;
   font-size: smaller;
   margin-top: 10px;
 }
-
 .razones__articulo:hover {
   transform: scale(105%);
   opacity: 1;
 }
-
 .razones__articulo:hover .razones__articulo--imagen {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
@@ -903,7 +829,7 @@ main {
   margin-bottom: 70px;
 }
 
-.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
+.banner__general, .banner__trabajos, .banner__servicios, .banner__quienes_somos {
   background-size: cover;
   min-height: 70vh;
   display: flex;
@@ -914,18 +840,17 @@ main {
   position: relative;
 }
 
-.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+.banner__general__titulo, .banner__trabajos__titulo, .banner__servicios__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo {
   z-index: 1;
   margin-bottom: 70px;
   text-align: center;
 }
-
-.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+.banner__general__titulo h1, .banner__trabajos__titulo h1, .banner__servicios__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1 {
   font-size: 300%;
   width: 100%;
 }
 
-.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+.banner__general--video, .banner__trabajos--video, .banner__servicios--video, .banner__quienes_somos--video {
   z-index: 0;
   position: absolute;
   object-fit: cover;
@@ -941,12 +866,10 @@ main {
   font-weight: 100;
   text-align: center;
 }
-
 .descripcion__servicios__contenedorfinal {
-  background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #161518 100%);
+  background: rgb(48, 48, 48);
+  background: linear-gradient(0deg, rgb(48, 48, 48) 0%, rgb(22, 21, 24) 100%);
 }
-
 .descripcion__servicios__contenidofinal {
   text-align: center;
   font-weight: 100;
@@ -958,7 +881,6 @@ main {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-
 .servicios__articulo {
   border-radius: 16px;
   border-style: none;
@@ -966,51 +888,41 @@ main {
   width: 70%;
   margin: 10px;
 }
-
 .servicios__articulo h3 {
   text-shadow: 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
 }
-
 .servicios__articulo:hover {
   transform: scale(120%);
 }
-
 .servicios__articulo--granizo {
   background-image: url(//i.imgur.com/RV0K6Gn.jpg);
   background-size: cover;
   transition: all 1s;
 }
-
 .servicios__articulo--granizo:hover {
   background-image: url(//i.imgur.com/48TJxPn.jpg);
 }
-
 .servicios__articulo--paragolpes {
   background-image: url(//i.imgur.com/LQSmsch.jpg);
   background-size: cover;
   transition: all 1s;
 }
-
 .servicios__articulo--paragolpes:hover {
   background-image: url(//i.imgur.com/JQf497Z.jpg);
 }
-
 .servicios__articulo--accidentes {
   background-image: url(//i.imgur.com/DHfAyXL.jpg);
   background-size: cover;
   transition: all 1s;
 }
-
 .servicios__articulo--accidentes:hover {
   background-image: url(//i.imgur.com/lowNIPv.jpg);
 }
-
 .servicios__articulo--pulido {
   background-image: url(//i.imgur.com/lHBV1YV.jpg);
   background-size: cover;
   transition: all 1s;
 }
-
 .servicios__articulo--pulido:hover {
   background-image: url(//i.imgur.com/UUqKBAQ.jpg);
 }
@@ -1019,7 +931,7 @@ main {
   font-weight: 100;
 }
 
-.banner__general, .banner__quienes_somos, .banner__servicios, .banner__trabajos {
+.banner__general, .banner__trabajos, .banner__quienes_somos, .banner__servicios {
   background-size: cover;
   min-height: 70vh;
   display: flex;
@@ -1030,18 +942,17 @@ main {
   position: relative;
 }
 
-.banner__general__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo, .banner__trabajos__titulo {
+.banner__general__titulo, .banner__trabajos__titulo, .banner__contacto__titulo, .banner__quienes_somos__titulo, .banner__servicios__titulo {
   z-index: 1;
   margin-bottom: 70px;
   text-align: center;
 }
-
-.banner__general__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1, .banner__trabajos__titulo h1 {
+.banner__general__titulo h1, .banner__trabajos__titulo h1, .banner__contacto__titulo h1, .banner__quienes_somos__titulo h1, .banner__servicios__titulo h1 {
   font-size: 300%;
   width: 100%;
 }
 
-.banner__general--video, .banner__quienes_somos--video, .banner__servicios--video, .banner__trabajos--video {
+.banner__general--video, .banner__trabajos--video, .banner__quienes_somos--video, .banner__servicios--video {
   z-index: 0;
   position: absolute;
   object-fit: cover;
@@ -1057,7 +968,6 @@ main {
 .videos {
   margin-top: 80px;
 }
-
 .videos iframe {
   width: 100%;
   height: 315px;
@@ -1074,12 +984,10 @@ main {
   margin-top: 90px;
   margin-bottom: 90px;
 }
-
 .trabajos_contenedor {
   display: flex;
   justify-content: center;
 }
-
 .trabajos img {
   background-color: #856c36;
   height: 180px;
@@ -1088,24 +996,19 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.5s;
 }
-
 .trabajos img:hover {
   transform: scale(110%);
 }
-
 .trabajos_borde_galeria {
   padding: 10px;
   object-fit: cover;
 }
-
 .trabajos__carrousel {
   padding: 30px;
 }
-
 .trabajos__carrousel--carrousel {
   width: 100%;
 }
-
 .trabajos__carrousel--carrousel--imagenes {
   width: 100%;
   height: 700px;
@@ -1119,10 +1022,9 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: #303030;
-  background: linear-gradient(0deg, #303030 0%, #161518 100%);
+  background: rgb(48, 48, 48);
+  background: linear-gradient(0deg, rgb(48, 48, 48) 0%, rgb(22, 21, 24) 100%);
 }
-
 .testimonios__articulo {
   background-color: darkgrey;
   border-radius: 16px;
@@ -1132,17 +1034,14 @@ main {
   margin: 10px;
   transition: all 0.5s;
 }
-
 .testimonios__articulo p {
   font-weight: 100;
   font-size: smaller;
   margin-top: 10px;
 }
-
 .testimonios__articulo:hover {
   background-color: #856c36;
 }
-
 .testimonios__articulo--vermas {
   background-color: darkgray;
   transition: all 0.5s;
@@ -1154,12 +1053,10 @@ main {
   height: fit-content;
   align-self: flex-end;
 }
-
 .testimonios__articulo--vermas:hover {
   background-color: #856c36;
   transform: scale(105%);
 }
-
 .testimonios__articulo--dejarcomentario {
   background-color: darkgray;
   transition: all 0.5s;
@@ -1171,16 +1068,13 @@ main {
   height: fit-content;
   align-self: flex-end;
 }
-
 .testimonios__articulo--dejarcomentario:hover {
   background-color: #856c36;
   transform: scale(105%);
 }
-
 .testimonios__articulo--userimage {
   width: 50px;
 }
-
 .testimonios__articulo--starimage {
   width: 10px;
 }
@@ -1206,8 +1100,9 @@ main {
     display: none;
   }
   .header__links li:hover {
-    background-color: #161518;
+    background-color: rgb(22, 21, 24);
   }
+
   #menubar {
     display: flex;
     background-color: #856c36;
@@ -1226,19 +1121,21 @@ main {
   #menubar:target {
     right: 0;
   }
+
   .menubar__cerrar {
     display: block;
     align-self: flex-end;
     transform: translateY(-2rem) scale(150%);
   }
+
   .footer {
-    background-color: #303030;
+    background-color: rgb(48, 48, 48);
     display: grid;
     padding: 10px;
     font-weight: 100;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "logo redes" "site contacto" "derechos derechos";
+    grid-template-areas: "logo redes" "site contacto" "derechos derechos";
     justify-items: center;
     gap: 20px;
     font-size: smaller;
@@ -1262,6 +1159,7 @@ main {
   .footer__nav {
     text-align: center;
   }
+
   .bannerinicio {
     height: 80vh;
   }
@@ -1281,7 +1179,7 @@ main {
   }
   .bannerinicio__titulo--impecable {
     display: inline;
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 70px;
     margin-left: 50px;
   }
@@ -1294,10 +1192,12 @@ main {
     margin-right: auto;
     margin-bottom: 150px;
   }
+
   .ultimos_trabajos_contenedor {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .banner__contacto {
     height: fit-content;
   }
@@ -1311,15 +1211,18 @@ main {
     padding: 0;
     font-size: 90%;
   }
+
   .form-control-lg {
     line-height: 1rem;
     min-height: 0.5px;
     padding: 1px;
     font-size: 1rem;
   }
+
   .mapa_y_datos {
     font-size: small;
   }
+
   .banner__quienes_somos {
     height: 60vh;
   }
@@ -1327,6 +1230,7 @@ main {
     font-size: 100%;
     width: 80%;
   }
+
   .banner__servicios {
     height: 60vh;
   }
@@ -1334,5 +1238,4 @@ main {
     font-size: 100%;
     width: 80%;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
